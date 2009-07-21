@@ -1,13 +1,13 @@
 # German language file for GNU Bash 4.0
 # Copyright (C) 1996 Free Software Foundation, Inc.
 # This file is distributed under the same license as the bash package.
-# Nils Naumann <nnau@gmx.net>, 1996, 2008.
+# Nils Naumann <nnau@gmx.net>, 1996, 2009.
 msgid ""
 msgstr ""
-"Project-Id-Version: bash 4.0-pre1\n"
+"Project-Id-Version: bash 4.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-02-19 14:53-0500\n"
-"PO-Revision-Date: 2008-12-20 16:56+0100\n"
+"PO-Revision-Date: 2009-07-21 21:24+0200\n"
 "Last-Translator: Nils Naumann <nnau@gmx.net>\n"
 "Language-Team: German <translation-team-de@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
@@ -45,7 +45,7 @@ msgstr "%s: Kann die Datei %s nicht erzeugen."
 
 #: bashline.c:3413
 msgid "bash_execute_unix_command: cannot find keymap for command"
-msgstr ""
+msgstr "bash_execute_unix_command: Kann nicht die Tastenzuordnung für das Kommando finden."
 
 #: bashline.c:3491
 #, c-format
@@ -64,7 +64,7 @@ msgstr "%s: Fehlender Doppelpunkt."
 
 #: builtins/bind.def:120 builtins/bind.def:123
 msgid "line editing not enabled"
-msgstr ""
+msgstr "Zeileneditierung ist nicht aktiviert."
 
 #: builtins/bind.def:206
 #, c-format
@@ -246,12 +246,12 @@ msgstr "Schreibfehler: %s."
 #: builtins/common.c:329
 #, c-format
 msgid "error setting terminal attributes: %s"
-msgstr ""
+msgstr "Fehler beim Setzen der Terminalattribute: %s"
 
 #: builtins/common.c:331
 #, c-format
 msgid "error getting terminal attributes: %s"
-msgstr ""
+msgstr "Fehler beim Ermitteln der Terminalattribute: %s"
 
 #: builtins/common.c:563
 #, c-format
@@ -307,7 +307,7 @@ msgstr "%s: Kann Feldvariablen nicht auf diese Art löschen."
 #: builtins/declare.def:468
 #, c-format
 msgid "%s: cannot convert associative to indexed array"
-msgstr ""
+msgstr "%s: Konvertieren von assoziativen in indizierte Arrays ist nicht möglich."
 
 #: builtins/enable.def:137 builtins/enable.def:145
 msgid "dynamic loading not available"
@@ -393,7 +393,7 @@ msgstr "%s: Kann die tempräre Datei nicht öffnen: %s"
 
 #: builtins/fg_bg.def:149 builtins/jobs.def:282
 msgid "current"
-msgstr ""
+msgstr "gegenwärtig"
 
 #: builtins/fg_bg.def:158
 #, c-format
@@ -709,7 +709,7 @@ msgstr ""
 #: builtins/setattr.def:186
 #, c-format
 msgid "%s: not a function"
-msgstr ""
+msgstr "%s: Ist keine Funktion."
 
 #: builtins/shift.def:71 builtins/shift.def:77
 msgid "shift count"
@@ -717,7 +717,7 @@ msgstr ""
 
 #: builtins/shopt.def:254
 msgid "cannot set and unset shell options simultaneously"
-msgstr ""
+msgstr "Kann nicht Shell Optinen gleichzeitig aktivieren und deaktivieren."
 
 #: builtins/shopt.def:319
 #, c-format
@@ -785,7 +785,7 @@ msgstr "`%c': Falsches Kommando."
 #: builtins/ulimit.def:427
 #, c-format
 msgid "%s: cannot get limit: %s"
-msgstr ""
+msgstr "%s: Kann die nicht Grenze setzen: %s"
 
 #: builtins/ulimit.def:453
 msgid "limit"
@@ -826,7 +826,7 @@ msgstr "Abbruch..."
 
 #: error.c:405
 msgid "unknown command error"
-msgstr ""
+msgstr "Unbekanntes Kommando"
 
 #: error.c:406
 msgid "bad command type"
@@ -838,9 +838,8 @@ msgid "bad connector"
 msgstr ""
 
 #: error.c:408
-#, fuzzy
 msgid "bad jump"
-msgstr "Falscher Sprung %d."
+msgstr "Falscher Sprung"
 
 #: error.c:446
 #, c-format
@@ -877,21 +876,20 @@ msgid "%s: command not found"
 msgstr "%s: Kommando nicht gefunden."
 
 #: execute_cmd.c:4708
-#, fuzzy, c-format
+#, c-format
 msgid "%s: %s: bad interpreter"
-msgstr "%s: ist ein Verzeichnis."
+msgstr "%s: %s: Defekter Interpreter"
 
 #: execute_cmd.c:4857
-#, fuzzy, c-format
+#, c-format
 msgid "cannot duplicate fd %d to fd %d"
-msgstr "Kann fd %d nicht auf fd 0 verdoppeln: %s"
+msgstr "Kann fd %d nicht auf fd %d verdoppeln."
 
 #: expr.c:241
 msgid "expression recursion level exceeded"
 msgstr "Zu viele Rekursionen in Ausdruck."
 
 #: expr.c:265
-#, fuzzy
 msgid "recursion stack underflow"
 msgstr "Rekursionsstapel leer."
 
@@ -908,9 +906,8 @@ msgid "division by 0"
 msgstr "Division durch 0."
 
 #: expr.c:471
-#, fuzzy
 msgid "bug: bad expassign token"
-msgstr "Fehler: Falsches Zuweisungszeichen %d."
+msgstr "Fehler: Falscher Zuweisungsoperator."
 
 #: expr.c:513
 msgid "`:' expected for conditional expression"
@@ -929,18 +926,17 @@ msgid "missing `)'"
 msgstr "Fehlende `)'"
 
 #: expr.c:897 expr.c:1175
-#, fuzzy
 msgid "syntax error: operand expected"
-msgstr "Syntax Fehler: Unerwartetes Dateiende."
+msgstr "Syntax Fehler: Operator erwartet."
 
 #: expr.c:1177
 msgid "syntax error: invalid arithmetic operator"
 msgstr "Syntaxfehler: Ungültiger arithmetischer Operator."
 
 #: expr.c:1201
-#, fuzzy, c-format
+#, c-format
 msgid "%s%s%s: %s (error token is \"%s\")"
-msgstr "%s: %s: %s (Fehlerverursachendes Wort ist \\\"%s\\\").\n"
+msgstr "%s%s%s: %s (Fehlerverursachendes Zeichen ist \\\"%s\\\")."
 
 #: expr.c:1259
 msgid "invalid arithmetic base"
@@ -951,9 +947,9 @@ msgid "value too great for base"
 msgstr "Der Wert ist zu groß für die aktuelle Basis."
 
 #: expr.c:1328
-#, fuzzy, c-format
+#, c-format
 msgid "%s: expression error\n"
-msgstr "Umlenkfehler"
+msgstr "%s: Fehler im Ausdruck.\n"
 
 #: general.c:61
 msgid "getcwd: cannot access parent directories"
@@ -971,9 +967,9 @@ msgstr "Kann keinen neuen Filedeskriptor für die Eingabe von fd %d zuweisen."
 
 # Debug Ausgabe
 #: input.c:266
-#, fuzzy, c-format
+#, c-format
 msgid "save_bash_input: buffer already exists for new fd %d"
-msgstr "check_bash_input: buffer already exists for new fd %d"
+msgstr "save_bash_input: Es existiert bereits ein Puffer für den neuen fd %d."
 
 #: jobs.c:466
 msgid "start_pipeline: pgrp pipe"
@@ -1001,9 +997,9 @@ msgstr ""
 
 # Programmierfehler
 #: jobs.c:1401
-#, fuzzy, c-format
+#, c-format
 msgid "describe_pid: %ld: no such pid"
-msgstr "describe_pid: Prozeß-Nummer existiert nicht (%d)!\n"
+msgstr "describe_pid: %ld: Prozeßnummer existiert nicht."
 
 #: jobs.c:1416
 #, c-format
@@ -1223,19 +1219,17 @@ msgid "The mail in %s has been read\n"
 msgstr "Die Post in %s wurde bereits gelesen.\n"
 
 #: make_cmd.c:322
-#, fuzzy
 msgid "syntax error: arithmetic expression required"
-msgstr "Syntaxfehler im Ausdruck."
+msgstr "Syntaxfehler: Ein arithmetischer Ausdruck wird verlangt."
 
 #: make_cmd.c:324
-#, fuzzy
 msgid "syntax error: `;' unexpected"
-msgstr "Syntax Fehler: Unerwartetes Dateiende."
+msgstr "Syntax Fehler: unerwartetes `;'."
 
 #: make_cmd.c:325
-#, fuzzy, c-format
+#, c-format
 msgid "syntax error: `((%s))'"
-msgstr "Syntax Fehler"
+msgstr "Syntax Fehler: `((%s))'."
 
 # interner Fehler
 #: make_cmd.c:567
@@ -1254,24 +1248,22 @@ msgid "make_redirection: redirection instruction `%d' out of range"
 msgstr ""
 
 #: parse.y:2986 parse.y:3218
-#, fuzzy, c-format
+#, c-format
 msgid "unexpected EOF while looking for matching `%c'"
 msgstr "Dateiende beim Suchen nach `%c' erreicht."
 
 #: parse.y:3722
-#, fuzzy
 msgid "unexpected EOF while looking for `]]'"
-msgstr "Dateiende beim Suchen nach `%c' erreicht."
+msgstr "Dateiende beim Suchen nach `]]' erreicht."
 
 #: parse.y:3727
-#, fuzzy, c-format
+#, c-format
 msgid "syntax error in conditional expression: unexpected token `%s'"
-msgstr "Syntaxfehler beim unerwarteten Wort `%s'"
+msgstr "Syntaxfehler im bedingten Ausdruck: Unerwartetes Zeichen `%s'."
 
 #: parse.y:3731
-#, fuzzy
 msgid "syntax error in conditional expression"
-msgstr "Syntaxfehler im Ausdruck."
+msgstr "Syntaxfehler im bedingen Ausdruck."
 
 #: parse.y:3809
 #, c-format
@@ -1279,7 +1271,6 @@ msgid "unexpected token `%s', expected `)'"
 msgstr ""
 
 #: parse.y:3813
-#, fuzzy
 msgid "expected `)'"
 msgstr "`)' erwartet."
 
@@ -1814,9 +1805,8 @@ msgid "pop_scope: head of shell_variables not a temporary environment scope"
 msgstr ""
 
 #: version.c:46
-#, fuzzy
 msgid "Copyright (C) 2009 Free Software Foundation, Inc."
-msgstr "Copyright (C) 2008 Free Software Foundation, Inc."
+msgstr "Copyright (C) 2009 Free Software Foundation, Inc."
 
 #: version.c:47
 msgid "License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>\n"
