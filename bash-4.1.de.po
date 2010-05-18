@@ -1,13 +1,13 @@
-# German language file for GNU Bash 4.0
+# German language file for GNU Bash 4.1
 # Copyright (C) 1996 Free Software Foundation, Inc.
 # This file is distributed under the same license as the bash package.
-# Nils Naumann <nnau@gmx.net>, 1996, 2009.
+# Nils Naumann <nnau@gmx.net>, 1996, 2009, 2010.
 msgid ""
 msgstr ""
-"Project-Id-Version: bash 4.0\n"
+"Project-Id-Version: bash 4.1\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-12-30 08:25-0500\n"
-"PO-Revision-Date: 2009-09-14 20:37+0200\n"
+"PO-Revision-Date: 2010-05-18 20:21+0200\n"
 "Last-Translator: Nils Naumann <nnau@gmx.net>\n"
 "Language-Team: German <translation-team-de@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
@@ -64,9 +64,9 @@ msgid "%s: missing colon separator"
 msgstr "%s: Fehlender Doppelpunkt."
 
 #: builtins/alias.def:132
-#, fuzzy, c-format
+#, c-format
 msgid "`%s': invalid alias name"
-msgstr "`%s': Ungültiger KEYMAP Name."
+msgstr "`%s': Ungültiger Alias Name."
 
 #: builtins/bind.def:120 builtins/bind.def:123
 msgid "line editing not enabled"
@@ -235,7 +235,7 @@ msgstr "%s ist außerhalb des Gültigkeitsbereiches."
 #: builtins/common.c:282
 #, c-format
 msgid "%s: no such job"
-msgstr "%s: Kein solche Job."
+msgstr "%s: Kein solcher Job."
 
 #: builtins/common.c:290
 #, c-format
@@ -520,9 +520,9 @@ msgid "expression expected"
 msgstr "Ausdruck erwartet."
 
 #: builtins/mapfile.def:165
-#, fuzzy, c-format
+#, c-format
 msgid "%s: not an indexed array"
-msgstr "%s: Ist kein Array."
+msgstr "%s: Ist kein indiziertes Array."
 
 #: builtins/mapfile.def:249 builtins/read.def:279
 #, c-format
@@ -590,7 +590,7 @@ msgstr "Der Verzeichnisstapel ist leer."
 
 #: builtins/pushd.def:508
 msgid "directory stack index"
-msgstr ""
+msgstr "Verzeichnisstapelindex"
 
 #: builtins/pushd.def:683
 #, fuzzy
@@ -621,7 +621,8 @@ msgstr ""
 "\n"
 "    Optionen:\n"
 "      -c        Verzeichnisstapel durch Löschen aller Einträge bereinigen.\n"
-"      -l        "
+"      -l        Das Heimatverzeichnis wird nicht mit vorangestellter Tilde\n"
+"      ausgegeben"
 
 #: builtins/pushd.def:705
 msgid ""
@@ -726,22 +727,22 @@ msgstr ""
 
 #: builtins/set.def:768
 msgid "cannot simultaneously unset a function and a variable"
-msgstr ""
+msgstr "Gleichzeitiges `unset' einer Funktion und einer Variable ist nicht möglich."
 
 #: builtins/set.def:805
 #, c-format
 msgid "%s: cannot unset"
-msgstr ""
+msgstr "%s: `unset' nicht möglich."
 
 #: builtins/set.def:812
 #, c-format
 msgid "%s: cannot unset: readonly %s"
-msgstr ""
+msgstr "%s: `unset' nicht möglich: Schreibgeschützt %s"
 
 #: builtins/set.def:823
 #, c-format
 msgid "%s: not an array variable"
-msgstr "%s: Ist kein Array."
+msgstr "%s: Ist keine Feldvariable."
 
 #: builtins/setattr.def:186
 #, c-format
@@ -750,7 +751,7 @@ msgstr "%s: Ist keine Funktion."
 
 #: builtins/shift.def:71 builtins/shift.def:77
 msgid "shift count"
-msgstr ""
+msgstr "Verschiebezähler"
 
 #: builtins/shopt.def:260
 msgid "cannot set and unset shell options simultaneously"
@@ -759,7 +760,7 @@ msgstr "Kann nicht Shell Optinen gleichzeitig aktivieren und deaktivieren."
 #: builtins/shopt.def:325
 #, c-format
 msgid "%s: invalid shell option name"
-msgstr ""
+msgstr "%s: Ungültiger Shell Optionen Name."
 
 #: builtins/source.def:128
 msgid "filename argument required"
@@ -772,7 +773,7 @@ msgstr "%s: Datei nicht gefunden."
 
 #: builtins/suspend.def:101
 msgid "cannot suspend"
-msgstr ""
+msgstr "Kann die Shell nicht unterbrechen."
 
 # logout
 #: builtins/suspend.def:111
@@ -782,7 +783,7 @@ msgstr "Kann die Loginshell nicht unterbrechen."
 #: builtins/type.def:234
 #, c-format
 msgid "%s is aliased to `%s'\n"
-msgstr ""
+msgstr "%s ist ein Alias von `%s'.\n"
 
 #: builtins/type.def:255
 #, c-format
@@ -835,7 +836,7 @@ msgstr "%s: Kann die Grenze nicht ändern: %s"
 
 #: builtins/umask.def:118
 msgid "octal number"
-msgstr ""
+msgstr "Oktalzahl"
 
 #: builtins/umask.def:231
 #, c-format
@@ -1258,14 +1259,14 @@ msgid "setlocale: LC_ALL: cannot change locale (%s): %s"
 msgstr ""
 
 #: locale.c:247
-#, fuzzy, c-format
+#, c-format
 msgid "setlocale: %s: cannot change locale (%s)"
-msgstr "xrealloc: %s:%d: Kann nicht %lu Bytes reservieren."
+msgstr "setlocale: %s: Kann die Standorteinstellungen nicht ändern (%s)."
 
 #: locale.c:249
-#, fuzzy, c-format
+#, c-format
 msgid "setlocale: %s: cannot change locale (%s): %s"
-msgstr "xrealloc: %s:%d: Kann nicht %lu Bytes reservieren."
+msgstr "setlocale: %s: Kann nicht die Locale ändern (%s): %s"
 
 # Du oder Sie?
 #: mailcheck.c:433
@@ -1423,9 +1424,9 @@ msgid "print_command: bad connector `%d'"
 msgstr "print_command: Falsches Verbindungszeichen `%d'."
 
 #: print_cmd.c:363
-#, fuzzy, c-format
+#, c-format
 msgid "xtrace_set: %d: invalid file descriptor"
-msgstr "%d: Ungültiger Dateibezeichner: %s"
+msgstr "xtrace_set: %d: Ungültige Dateibeschreibung."
 
 #: print_cmd.c:368
 msgid "xtrace_set: NULL file pointer"
@@ -1466,9 +1467,9 @@ msgid "cannot create temp file for here-document: %s"
 msgstr ""
 
 #: redir.c:184
-#, fuzzy, c-format
+#, c-format
 msgid "%s: cannot assign fd to variable"
-msgstr "%s: Kann einem Feldelement keine Liste zuweisen."
+msgstr "%s: Kann fd keiner Variable zuweisen."
 
 #: redir.c:544
 msgid "/dev/(tcp|udp)/host/port not supported without networking"
@@ -1867,9 +1868,9 @@ msgid "all_local_variables: no function context at current scope"
 msgstr ""
 
 #: variables.c:3376
-#, fuzzy, c-format
+#, c-format
 msgid "%s has null exportstr"
-msgstr "%s: Parameter ist Null oder nicht gesetzt."
+msgstr ""
 
 #: variables.c:3381 variables.c:3390
 #, c-format
@@ -1894,14 +1895,14 @@ msgid "pop_scope: head of shell_variables not a temporary environment scope"
 msgstr ""
 
 #: variables.c:4678
-#, fuzzy, c-format
+#, c-format
 msgid "%s: %s: cannot open as FILE"
-msgstr "%s: Kann die Datei nicht öffnen: %s"
+msgstr "%s: %s: Kann nicht als Datei geöffnet werden."
 
 #: variables.c:4683
-#, fuzzy, c-format
+#, c-format
 msgid "%s: %s: invalid value for trace file descriptor"
-msgstr "%d: Ungültiger Dateibezeichner: %s"
+msgstr ""
 
 #: version.c:46
 msgid "Copyright (C) 2009 Free Software Foundation, Inc."
@@ -1927,34 +1928,34 @@ msgid "There is NO WARRANTY, to the extent permitted by law.\n"
 msgstr "Für dieses Programm besteht keinerlei Garantie.\n"
 
 #: version2.c:86
-#, fuzzy, c-format
+#, c-format
 msgid "Copyright (C) 2009 Free Software Foundation, Inc.\n"
-msgstr "Copyright (C) 2009 Free Software Foundation, Inc."
+msgstr "Copyright (C) 2009 Free Software Foundation, Inc.\n"
 
 #: version2.c:87
-#, fuzzy, c-format
+#, c-format
 msgid "License GPLv2+: GNU GPL version 2 or later <http://gnu.org/licenses/gpl.html>\n"
-msgstr "Lizenz GPLv3+: GNU GPL Version 3 oder jünger <http://gnu.org/licenses/gpl.html>\n"
+msgstr "Lizenz GPLv2+: GNU GPL Version 2 oder jünger <http://gnu.org/licenses/gpl.html>\n"
 
 #: xmalloc.c:91
-#, fuzzy, c-format
+#, c-format
 msgid "%s: cannot allocate %lu bytes (%lu bytes allocated)"
-msgstr "xmalloc: Kann %lu Bytes nicht reservieren (%lu bytes reserviert)."
+msgstr "%s: Kann %lu Bytes nicht reservieren (%lu bytes reserviert)."
 
 #: xmalloc.c:93
-#, fuzzy, c-format
+#, c-format
 msgid "%s: cannot allocate %lu bytes"
-msgstr "xmalloc: Kann nicht %lu Bytes reservieren."
+msgstr "%s: Kann nicht %lu Bytes reservieren."
 
 #: xmalloc.c:163
-#, fuzzy, c-format
+#, c-format
 msgid "%s: %s:%d: cannot allocate %lu bytes (%lu bytes allocated)"
-msgstr "xmalloc: %s:%d: Kann nicht %lu Bytes reservieren (%lu bytes reserviert)."
+msgstr "%s: %s:%d: Kann nicht %lu Bytes reservieren (%lu bytes reserviert)."
 
 #: xmalloc.c:165
-#, fuzzy, c-format
+#, c-format
 msgid "%s: %s:%d: cannot allocate %lu bytes"
-msgstr "xmalloc: %s:%d: Kann nicht %lu Bytes reservieren."
+msgstr "%s: %s:%d: Kann nicht %lu Bytes reservieren."
 
 #: builtins.c:43
 msgid "alias [-p] [name[=value] ... ]"
@@ -2070,9 +2071,8 @@ msgid "hash [-lr] [-p pathname] [-dt] [name ...]"
 msgstr "hash [-lr] [-p Pfadname] [-dt] [Name ...]"
 
 #: builtins.c:117
-#, fuzzy
 msgid "help [-dms] [pattern ...]"
-msgstr "help [-ds] [Muster ...]"
+msgstr "help [-dms] [Muster ...]"
 
 #: builtins.c:121
 msgid "history [-c] [-d offset] [n] or history -anrw [filename] or history -ps arg [arg...]"
@@ -2095,9 +2095,8 @@ msgid "let arg [arg ...]"
 msgstr "let Argument [Argument ...]"
 
 #: builtins.c:136
-#, fuzzy
 msgid "read [-ers] [-a array] [-d delim] [-i text] [-n nchars] [-N nchars] [-p prompt] [-t timeout] [-u fd] [name ...]"
-msgstr "read [-ers] [-a Feld] [-d Begrenzer] [-i Text] [-n Zeichenanzahl] [-p Prompt] [-t Zeitlimit] [-u fd] [Name ...]"
+msgstr "read [-ers] [-a Feld] [-d Begrenzer] [-i Text] [-n Zeichenanzahl] [-N Zeichenanzahl] [-p Prompt] [-t Zeitlimit] [-u fd] [Name ...]"
 
 #: builtins.c:138
 msgid "return [n]"
@@ -2252,18 +2251,16 @@ msgid "printf [-v var] format [arguments]"
 msgstr "printf [-v var] Format [Argumente]"
 
 #: builtins.c:229
-#, fuzzy
 msgid "complete [-abcdefgjksuv] [-pr] [-DE] [-o option] [-A action] [-G globpat] [-W wordlist]  [-F function] [-C command] [-X filterpat] [-P prefix] [-S suffix] [name ...]"
-msgstr "complete [-abcdefgjksuv] [-pr] [-o Option] [-A Methode] [-G Suchmuster] [-W Wortliste]  [-F Funktion] [-C Kommando] [-X Filtermuster] [-P Prefix] [-S Suffix] [Name ...]"
+msgstr "complete [-abcdefgjksuv] [-pr] [-DE] [-o Option] [-A Aktion] [-G Suchmuster] [-W Wortliste]  [-F Funktion] [-C Kommando] [-X Filtermuster] [-P Prefix] [-S Suffix] [Name ...]"
 
 #: builtins.c:233
 msgid "compgen [-abcdefgjksuv] [-o option]  [-A action] [-G globpat] [-W wordlist]  [-F function] [-C command] [-X filterpat] [-P prefix] [-S suffix] [word]"
 msgstr "compgen [-abcdefgjksuv] [-o Option]  [-A Aktion] [-G Suchmuster] [-W Wortliste]  [-F Funktion] [-C Kommando] [-X Filtermuster] [-P Prefix] [-S Suffix] [Wort]"
 
 #: builtins.c:237
-#, fuzzy
 msgid "compopt [-o|+o option] [-DE] [name ...]"
-msgstr "compopt [-o|+o Option] [Name ...]"
+msgstr "compopt [-o|+o Option] [-DE] [Name ...]"
 
 #: builtins.c:240
 msgid "mapfile [-n count] [-O origin] [-s count] [-t] [-u fd] [-C callback] [-c quantum] [array]"
@@ -2323,7 +2320,9 @@ msgstr ""
 "    \n"
 "    Gibt immer Erfolg zurück, wenn der Name existiert."
 
+# bind
 #: builtins.c:289
+#, fuzzy
 msgid ""
 "Set Readline key bindings and variables.\n"
 "    \n"
@@ -2357,6 +2356,39 @@ msgid ""
 "    Exit Status:\n"
 "    bind returns 0 unless an unrecognized option is given or an error occurs."
 msgstr ""
+"Konfiguriert Readline Tastenzuordnungen und Variablen.\n"
+"    \n"
+"    Weist eine Tastensequenz einer Readline Funktion oder einem Makro\n"
+"    zu oder setzt eine Readline Variable.  The non-option argument\n"
+"    syntax is equivalent to that found in ~/.inputrc, but must be\n"
+"    passed as a single argument: e.g., bind '\"\\C-x\\C-r\":\n"
+"    re-read-init-file'.\n"
+"    \n"
+"    Optionen:\n"
+"      -m  Keymap         Benutzt KEYMAP as Tastaturbelegung für die Laufzeit\n"
+"                         dieses Kommandos.  Gültige Keymap Namen sind: emacs,\n"
+"                         emacs-standard, emacs-meta, emacs-ctlx, vi, vi-move,\n"
+"                         vi-command, und vi-insert.\n"
+"      -l                 Listet Funktionsnamen auf.\n"
+"      -P                 Listet Funktionsnamen und Tastenzuordnungen auf.\n"
+"      -p                 Listet Funktionsnamen und Tastenzuordnungen so auf,\n"
+"                         dass sie direkt als Eingabe verwendet werden können.\n"
+"      -S                 List key sequences that invoke macros and their values\n"
+"      -s                 List key sequences that invoke macros and their values\n"
+"                         in a form that can be reused as input.\n"
+"      -V                 List variable names and values\n"
+"      -v                 List variable names and values in a form that can\n"
+"                         be reused as input.\n"
+"      -q  function-name  Query about which keys invoke the named function.\n"
+"      -u  function-name  Unbind all keys which are bound to the named function.\n"
+"      -r  keyseq         Remove the binding for KEYSEQ.\n"
+"      -f  filename       Read key bindings from FILENAME.\n"
+"      -x  keyseq:shell-command\tCause SHELL-COMMAND to be executed when\n"
+"    \t\t\t\tKEYSEQ is entered.\n"
+"    \n"
+"    Rückgabewert: \n"
+"    Bind gibt 0 zurück, wenn keine unerkannte Option angegeben wurde\n"
+"    oder ein Fehler eintrat."
 
 #: builtins.c:326
 msgid ""
