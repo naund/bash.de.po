@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: bash 4.1\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-01-28 22:09-0500\n"
-"PO-Revision-Date: 2010-05-18 20:21+0200\n"
+"PO-Revision-Date: 2011-02-16 14:09+0100\n"
 "Last-Translator: Nils Naumann <nnau@gmx.net>\n"
 "Language-Team: German <translation-team-de@lists.sourceforge.net>\n"
 "Language: de\n"
@@ -549,9 +549,9 @@ msgid "`%s': missing format character"
 msgstr "`%s': Fehlendes Formatierungszeichen."
 
 #: builtins/printf.def:448
-#, fuzzy, c-format
+#, c-format
 msgid "`%c': invalid time format specification"
-msgstr "%s: Ungültige Wartezeitangebe."
+msgstr "`%c': Ungültige Zeitformatangabe."
 
 #: builtins/printf.def:635
 #, c-format
@@ -568,9 +568,9 @@ msgid "missing hex digit for \\x"
 msgstr "Fehlende hexadezimale Ziffer nach \\x."
 
 #: builtins/printf.def:855
-#, fuzzy, c-format
+#, c-format
 msgid "missing unicode digit for \\%c"
-msgstr "Fehlende hexadezimale Ziffer nach \\x."
+msgstr "Fehlendes Unicode Zeichen für \\%c."
 
 #: builtins/pushd.def:195
 msgid "no other directory"
@@ -589,7 +589,6 @@ msgid "directory stack index"
 msgstr "Verzeichnisstapelindex"
 
 #: builtins/pushd.def:683
-#, fuzzy
 msgid ""
 "Display the list of currently remembered directories.  Directories\n"
 "    find their way onto the list with the `pushd' command; you can get\n"
@@ -611,14 +610,23 @@ msgid ""
 "\tdirs when invoked without options, starting with zero."
 msgstr ""
 "Zeigt die Liste der gegenwärtig gespeicherten Verzeichnisse an.  Durch\n"
-"    das `popd' Kommando werden die Verzeichnisse auf den Stapel gelegt\n"
-"    und können durch das `pushd' Kommando wieder vom Stapel entfernt\n"
+"    das »pushd« Kommando werden die Verzeichnisse auf den Stapel gelegt\n"
+"    und können durch das »popd« Kommando wieder vom Stapel entfernt\n"
 "    werden.\n"
 "\n"
 "    Optionen:\n"
-"      -c        Verzeichnisstapel durch Löschen aller Einträge bereinigen.\n"
-"      -l        Das Heimatverzeichnis wird nicht mit vorangestellter Tilde\n"
-"      ausgegeben\n"
+"\t-c\tVerzeichnisstapel durch Löschen aller Einträge bereinigen.\n"
+"\t-l\tDas Heimatverzeichnis wird nicht mit vorangestellter Tilde\n"
+"\tausgegeben\n"
+"\t-p\tDen Verzeichnisstapel zeilenweise ausgeben.\n"
+"\t-v\tDen Verzeichnisstapel zeilenweise mit vorangestellter\n"
+"\tPositionsnummer auseben.\n"
+"\n"
+"    Argumente:\n"
+"\t+N\tZeigt den N'ten Eintrag von links an, der von »dirs« ausgegeben\n"
+"\twird, wenn es ohne Optionen aufgerufen wird, beginnend mit Null.\n"
+"\t-N\tZeigt den N'ten Eintrag von rechts an, der von »dirs« ausgegeben\n"
+"\twird, wenn es ohne Optionen aufgerufen wird, beginnend mit Null."
 
 #: builtins/pushd.def:705
 msgid ""
@@ -719,7 +727,7 @@ msgstr "Lesefehler: %d: %s"
 
 #: builtins/return.def:73
 msgid "can only `return' from a function or sourced script"
-msgstr ""
+msgstr "»Return« ist nur aus einer Funktion oder einem mit »source« ausgefühten Skript möglich."
 
 #: builtins/set.def:771
 msgid "cannot simultaneously unset a function and a variable"
@@ -794,7 +802,7 @@ msgstr "%s ist eine Funktion.\n"
 #: builtins/type.def:296
 #, c-format
 msgid "%s is a shell builtin\n"
-msgstr ""
+msgstr "%s ist eine von der Shell mitgelieferte Funktion.\n"
 
 #: builtins/type.def:317 builtins/type.def:391
 #, c-format
@@ -912,7 +920,7 @@ msgstr "%s: Kommando nicht gefunden."
 #: execute_cmd.c:4959
 #, c-format
 msgid "%s: %s"
-msgstr ""
+msgstr "%s: %s"
 
 #: execute_cmd.c:4995
 #, c-format
@@ -1017,12 +1025,12 @@ msgstr "start_pipeline: pgrp pipe"
 #: jobs.c:889
 #, c-format
 msgid "forked pid %d appears in running job %d"
-msgstr ""
+msgstr "Die geforkte PID %d erscheint im laufenden Prozess %d."
 
 #: jobs.c:1007
 #, c-format
 msgid "deleting stopped job %d with process group %ld"
-msgstr ""
+msgstr "Lösche den gestoppten Prozess %d der Prozessgruppe %ld."
 
 #: jobs.c:1112
 #, c-format
@@ -1252,12 +1260,12 @@ msgstr "Der Netzwerkbetrieb ist nicht unterstützt."
 #: locale.c:192
 #, c-format
 msgid "setlocale: LC_ALL: cannot change locale (%s)"
-msgstr ""
+msgstr "setlocale: LC_ALL: Kann die Locale nicht ändern (%s)."
 
 #: locale.c:194
 #, c-format
 msgid "setlocale: LC_ALL: cannot change locale (%s): %s"
-msgstr ""
+msgstr "setlocale: LC_ALL: Kann die Locale nicht ändern (%s): %s"
 
 #: locale.c:247
 #, c-format
@@ -1906,9 +1914,8 @@ msgid "%s: %s: invalid value for trace file descriptor"
 msgstr ""
 
 #: version.c:46
-#, fuzzy
 msgid "Copyright (C) 2011 Free Software Foundation, Inc."
-msgstr "Copyright (C) 2009 Free Software Foundation, Inc."
+msgstr "Copyright (C) 2011 Free Software Foundation, Inc."
 
 #: version.c:47
 msgid "License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>\n"
@@ -1988,9 +1995,8 @@ msgid "caller [expr]"
 msgstr "caller [Ausdruck]"
 
 #: builtins.c:64
-#, fuzzy
 msgid "cd [-L|[-P [-e]]] [dir]"
-msgstr "cd [-L|-P] [Verzeichnis]"
+msgstr "cd [-L|[-P [-e]]] [Verzeichnis]"
 
 #: builtins.c:66
 msgid "pwd [-LP]"
@@ -2013,15 +2019,13 @@ msgid "command [-pVv] command [arg ...]"
 msgstr "command [-pVv] Kommando [Argument ...]"
 
 #: builtins.c:76
-#, fuzzy
 msgid "declare [-aAfFgilrtux] [-p] [name[=value] ...]"
-msgstr "declare [-aAfFilrtux] [-p] [Name[=Wert] ...]"
+msgstr "declare [-aAfFgilrtux] [-p] Name[=Wert] ..."
 
 #
 #: builtins.c:78
-#, fuzzy
 msgid "typeset [-aAfFgilrtux] [-p] name[=value] ..."
-msgstr "typeset [-aAfFilrtux] [-p] Name[=Wert] ..."
+msgstr "typeset [-aAfFgilrtux] [-p] Name[=Wert] ..."
 
 #: builtins.c:80
 msgid "local [option] name[=value] ..."
@@ -2108,9 +2112,8 @@ msgid "return [n]"
 msgstr "return [n]"
 
 #: builtins.c:140
-#, fuzzy
 msgid "set [-abefhkmnptuvxBCHP] [-o option-name] [--] [arg ...]"
-msgstr "set [--abefhkmnptuvxBCHP] [-o Option] [ARG ...]"
+msgstr "set [-abefhkmnptuvxBCHP] [-o Option] [--] [Argument ...]"
 
 #: builtins.c:142
 msgid "unset [-f] [-v] [name ...]"
@@ -2121,9 +2124,8 @@ msgid "export [-fn] [name[=value] ...] or export -p"
 msgstr "export [-fn] [Name[=Wert] ...] oder export -p"
 
 #: builtins.c:146
-#, fuzzy
 msgid "readonly [-aAf] [name[=value] ...] or readonly -p"
-msgstr "readonly [-af] [Name[=Wert] ...] oder readonly -p"
+msgstr "readonly [-aAf] [Name[=Wert] ...] oder readonly -p"
 
 #: builtins.c:148
 msgid "shift [n]"
@@ -2329,7 +2331,6 @@ msgstr ""
 
 # bind
 #: builtins.c:289
-#, fuzzy
 msgid ""
 "Set Readline key bindings and variables.\n"
 "    \n"
@@ -2366,8 +2367,8 @@ msgstr ""
 "Konfiguriert Readline Tastenzuordnungen und Variablen.\n"
 "    \n"
 "    Weist eine Tastensequenz einer Readline Funktion oder einem Makro\n"
-"    zu oder setzt eine Readline Variable.  Das non-option Argument\n"
-"    syntax ist äquivalent zu den Einträgen in ~/.inputrc, aber sie\n"
+"    zu oder setzt eine Readline Variable.  Der non-option Argument\n"
+"    syntax ist zu den Einträgen in ~/.inputrc äquivalent, aber sie\n"
 "    müssen als einzelnes Argument übergeben werden.  Z.B: bind\n"
 "    '\"\\C-x\\C-r\": re-read-init-file'.\n"
 "    \n"
@@ -2375,7 +2376,7 @@ msgstr ""
 "      -m  Keymap         Benutzt KEYMAP as Tastaturbelegung für die Laufzeit\n"
 "                         dieses Kommandos.  Gültige Keymap Namen sind: emacs,\n"
 "                         emacs-standard, emacs-meta, emacs-ctlx, vi, vi-move,\n"
-"                         vi-command, und vi-insert.\n"
+"                         vi-command und vi-insert.\n"
 "      -l                 Listet Funktionsnamen auf.\n"
 "      -P                 Listet Funktionsnamen und Tastenzuordnungen auf.\n"
 "      -p                 Listet Funktionsnamen und Tastenzuordnungen so auf,\n"
@@ -2387,12 +2388,12 @@ msgstr ""
 "      -V                 List variable names and values\n"
 "      -v                 List variable names and values in a form that can\n"
 "                         be reused as input.\n"
-"      -q  function-name  Query about which keys invoke the named function.\n"
-"      -u  function-name  Unbind all keys which are bound to the named function.\n"
-"      -r  keyseq         Remove the binding for KEYSEQ.\n"
-"      -f  filename       Read key bindings from FILENAME.\n"
-"      -x  keyseq:shell-command\tCause SHELL-COMMAND to be executed when\n"
-"    \t\t\t\tKEYSEQ is entered.\n"
+"      -q  Funktionsname  Succht die Tastenfolgen, welche die angegebene Funktion aufrufen.\n"
+"      -u  Funktionsname  Entfernt alle der Funktion zugeordneten Tastenfolgen.\n"
+"      -r  Tastenfolge    Entfernt die Zuweisungen der angegebeben Tastenfolge.\n"
+"      -f  Dateiname      Liest die Tastenzuordnungen aus der angegebenen Datei.\n"
+"      -x  Tastenfolge:Shellkommando\tWeist der Tastenfolge das Shellkommando\n"
+"    \t\t\t\t\tzu.\n"
 "    \n"
 "    Rückgabewert: \n"
 "    Bind gibt 0 zurück, wenn keine unerkannte Option angegeben wurde\n"
@@ -2475,7 +2476,6 @@ msgid ""
 msgstr ""
 
 #: builtins.c:383
-#, fuzzy
 msgid ""
 "Change the shell working directory.\n"
 "    \n"
@@ -2523,11 +2523,15 @@ msgstr ""
 "    Optionen:\n"
 "        -L\tErzwingt das Folgen symbolischer Verweise.\n"
 "        -P\tSymbolische Verweise werden ignoriert.\n"
+"        -e\tDer Rückgabewert ist ungleich Null, wenn die -P Option verwendet wird\n"
+"\t\tund das aktuelle Arbeitsverzeichns nicht ermittelt werden kann.\n"
 "    \n"
 "    Standardmäßig wird symbolischen Verweisen gefolgt.\n"
 "    \n"
-"    Rückgabewert:\n"
-"    Wenn das Verzeichnic gewechselt wurde 0; sonst ungleich Null."
+"    Rückgabewert: \n"
+"    Der Rückgabewert ist 0, wenn das Verzeichnis gewechselt wurde,\n"
+"    und wenn -P verwendet worden ist auch $PWD gesetzt werden konnte; sonst\n"
+"    ungleich 0."
 
 #: builtins.c:414
 msgid ""
