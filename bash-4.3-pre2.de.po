@@ -1,13 +1,13 @@
-# German language file for GNU Bash 4.2
+# German language file for GNU Bash 4.3
 # Copyright (C) 2011 Free Software Foundation, Inc.
 # This file is distributed under the same license as the bash package.
-# Nils Naumann <nnau@gmx.net>, 1996-2011.
+# Nils Naumann <nnau@gmx.net>, 1996-2013.
 msgid ""
 msgstr ""
 "Project-Id-Version: bash 4.2\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-03-08 16:00-0500\n"
-"PO-Revision-Date: 2013-08-25 14:41+0200\n"
+"PO-Revision-Date: 2013-08-26 20:56+0200\n"
 "Last-Translator: Nils Naumann <nau@gmx.net>\n"
 "Language-Team: German <translation-team-de@lists.sourceforge.net>\n"
 "Language: de\n"
@@ -586,10 +586,9 @@ msgid "no other directory"
 msgstr "kein anderes Verzeichnis"
 
 #: builtins/pushd.def:354
-#, fuzzy, c-format
-#| msgid "%s: invalid limit argument"
+#, c-format
 msgid "%s: invalid argument"
-msgstr "%s: Ungültiges Grenzwertargument."
+msgstr "%s: Ungültiges Argument."
 
 #: builtins/pushd.def:468
 msgid "<no current directory>"
@@ -948,16 +947,14 @@ msgid "%s: %s: bad interpreter"
 msgstr "%s: %s: Defekter Interpreter"
 
 #: execute_cmd.c:5234
-#, fuzzy, c-format
-#| msgid "%s: cannot execute binary file"
+#, c-format
 msgid "%s: cannot execute binary file: %s"
-msgstr "%s: Kann die Datei nicht ausführen."
+msgstr "%s: Kann die Binärdatei nicht ausführen: %s"
 
 #: execute_cmd.c:5306
-#, fuzzy, c-format
-#| msgid "%s is a shell builtin\n"
+#, c-format
 msgid "`%s': is a special builtin"
-msgstr "%s ist eine von der Shell mitgelieferte Funktion.\n"
+msgstr "`%s' ist eine spezielle eingebaute Funktion."
 
 #: execute_cmd.c:5358
 #, c-format
@@ -1560,10 +1557,8 @@ msgid "Shell options:\n"
 msgstr "Shell-Optionen:\n"
 
 #: shell.c:1835
-#, fuzzy
-#| msgid "\t-irsD or -c command or -O shopt_option\t\t(invocation only)\n"
 msgid "\t-ilrsD or -c command or -O shopt_option\t\t(invocation only)\n"
-msgstr "\t-irsD oder -c Kommando\t\t(Nur Aufruf)\n"
+msgstr "\t-ilrsD oder -c Kommando\toder -O shopt_option            (Nur Aufruf)\n"
 
 #: shell.c:1850
 #, c-format
@@ -1912,10 +1907,9 @@ msgid "make_local_variable: no function context at current scope"
 msgstr ""
 
 #: variables.c:2217
-#, fuzzy, c-format
-#| msgid "%s: cannot assign fd to variable"
+#, c-format
 msgid "%s: variable may not be assigned value"
-msgstr "%s: Kann fd keiner Variable zuweisen."
+msgstr "%s: Der Variable könnte kein Wert zugewiesen sein."
 
 #: variables.c:3554
 msgid "all_local_variables: no function context at current scope"
@@ -1959,16 +1953,13 @@ msgid "%s: %s: invalid value for trace file descriptor"
 msgstr ""
 
 #: variables.c:5215
-#, fuzzy, c-format
-#| msgid "%s: %s out of range"
+#, c-format
 msgid "%s: %s: compatibility value out of range"
-msgstr "%s: %s ist außerhalb des Gültigkeitsbereiches."
+msgstr "%s: %s: Kompatibilitätswert außerhalb des Gültigkeitsbereiches."
 
 #: version.c:46 version2.c:46
-#, fuzzy
-#| msgid "Copyright (C) 2011 Free Software Foundation, Inc."
 msgid "Copyright (C) 2012 Free Software Foundation, Inc."
-msgstr "Copyright (C) 2011 Free Software Foundation, Inc."
+msgstr "Copyright (C) 2012 Free Software Foundation, Inc."
 
 #: version.c:47 version2.c:47
 msgid "License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>\n"
@@ -1980,16 +1971,12 @@ msgid "GNU bash, version %s (%s)\n"
 msgstr "GNU bash, Version %s (%s)\n"
 
 #: version.c:91 version2.c:91
-#, fuzzy
-#| msgid "This is free software; you are free to change and redistribute it.\n"
 msgid "This is free software; you are free to change and redistribute it."
-msgstr "Dies ist freie Software.  Sie darf verändert und verteilt werden.\n"
+msgstr "Dies ist freie Software.  Sie darf verändert und verteilt werden."
 
 #: version.c:92 version2.c:92
-#, fuzzy
-#| msgid "There is NO WARRANTY, to the extent permitted by law.\n"
 msgid "There is NO WARRANTY, to the extent permitted by law."
-msgstr "Für dieses Programm besteht keinerlei Garantie.\n"
+msgstr "Für den größtmöglichen gesetzlich zulässigen Umfang wird jede Haftung ausgeschlossen."
 
 #: xmalloc.c:91
 #, c-format
@@ -2020,10 +2007,10 @@ msgid "unalias [-a] name [name ...]"
 msgstr "unalias [-a] Name [Name ...]"
 
 #: builtins.c:51
-#, fuzzy
-#| msgid "bind [-lpvsPVS] [-m keymap] [-f filename] [-q name] [-u name] [-r keyseq] [-x keyseq:shell-command] [keyseq:readline-function or readline-command]"
 msgid "bind [-lpsvPSVX] [-m keymap] [-f filename] [-q name] [-u name] [-r keyseq] [-x keyseq:shell-command] [keyseq:readline-function or readline-command]"
-msgstr "bind [-lpvsPVS] [-m Tastaturtabelle] [-f Dateiname] [-q Name] [-u Name] [-r Tastenfolge:Shell Kommando] [Tastenfolge:readline Funktion oder Kommando]"
+msgstr ""
+"bind [-lpsvPSVX] [-m Tastaturtabelle] [-f Dateiname] [-q Name] [-u\n"
+"Name] [-r Tastenfolge] [-x Tastenfolge:Shell Kommando] [Tastenfolge:readline Funktion oder Kommando]"
 
 #: builtins.c:54
 msgid "break [n]"
@@ -2066,10 +2053,8 @@ msgid "command [-pVv] command [arg ...]"
 msgstr "command [-pVv] Kommando [Argument ...]"
 
 #: builtins.c:76
-#, fuzzy
-#| msgid "declare [-aAfFgilrtux] [-p] [name[=value] ...]"
 msgid "declare [-aAfFgilnrtux] [-p] [name[=value] ...]"
-msgstr "declare [-aAfFgilrtux] [-p] Name[=Wert] ..."
+msgstr "declare [-aAfFgilrntux] [-p] Name[=Wert] ..."
 
 #
 #: builtins.c:78
@@ -2165,10 +2150,8 @@ msgid "set [-abefhkmnptuvxBCHP] [-o option-name] [--] [arg ...]"
 msgstr "set [-abefhkmnptuvxBCHP] [-o Option] [--] [Argument ...]"
 
 #: builtins.c:142
-#, fuzzy
-#| msgid "unset [-f] [-v] [name ...]"
 msgid "unset [-f] [-v] [-n] [name ...]"
-msgstr "unset [-f] [-v] [NAME ...]"
+msgstr "unset [-f] [-v] [-n] [NAME ...]"
 
 #: builtins.c:144
 msgid "export [-fn] [name[=value] ...] or export -p"
@@ -2215,26 +2198,20 @@ msgid "type [-afptP] name [name ...]"
 msgstr "type [-afptP] Name [Name ...]"
 
 #: builtins.c:169
-#, fuzzy
-#| msgid "ulimit [-SHacdefilmnpqrstuvx] [limit]"
 msgid "ulimit [-SHabcdefilmnpqrstuvxT] [limit]"
-msgstr "ulimit [-SHacdefilmnpqrstuvx] [Grenzwert]"
+msgstr "ulimit [-SHabcdefilmnpqrstuvxT] [Grenzwert]"
 
 #: builtins.c:172
 msgid "umask [-p] [-S] [mode]"
 msgstr "umask [-p] [-S] [Modus]"
 
 #: builtins.c:175
-#, fuzzy
-#| msgid "wait [id]"
 msgid "wait [-n] [id ...]"
-msgstr "wait [id]"
+msgstr "wait [-n] [id ...]"
 
 #: builtins.c:179
-#, fuzzy
-#| msgid "wait [pid]"
 msgid "wait [pid ...]"
-msgstr "wait [pid]"
+msgstr "wait [pid ...]"
 
 #: builtins.c:182
 msgid "for NAME [in WORDS ... ] ; do COMMANDS; done"
@@ -2338,7 +2315,6 @@ msgstr "readarray [-n Anzahl] [-O Quelle] [-s Anzahl] [-t] [-u fd] [-C Callback]
 
 # alias
 #: builtins.c:254
-#, fuzzy
 msgid ""
 "Define or display aliases.\n"
 "    \n"
@@ -2358,19 +2334,18 @@ msgid ""
 msgstr ""
 "Definiert Aliase oder zeigt sie an.\n"
 "    \n"
-"    Ohne Argumente wird die Liste der Aliase (Synonyme) in der Form \n"
-"    `alias Name=Wert' auf die Standardausgabe gedruckt.\n"
+"    Ohne Argumente wird die Liste der Aliase (Synonyme) in der Form\n"
+"    `alias Name=Wert' auf die Standardausgabe ausgegeben.\n"
 "\n"
-"    Sonst wird ein Alias für jeden angegebenen Namen definiert, für den ein\n"
-"    Wert angegeben wurde.  \n"
-"    A trailing space in VALUE causes the next word to be checked for\n"
-"    alias substitution when the alias is expanded.\n"
-"    \n"
-"    Options:\n"
-"      -p\tPrint all defined aliases in a reusable format\n"
+"    Sonst wird ein Alias für jeden angegebenen Namen definiert, für\n"
+"    den ein Wert angegeben wurde. Wenn `Wert' mit einem Leerzeichen\n"
+"    abschließt, dann wird auch das folgende Wort auf Aliase überprüft.\n"
+"\n"
+"    Optionen:\n"
+"      -p\tGibt alle definierten Aliase aus.\n"
 "    \n"
 "    Rückgabewert:\n"
-"    Meldet Erfolg, außer wenn NAME nicht existiert."
+"    Meldet Erfolg, außer wenn `Name' nicht existiert."
 
 # unalias
 #: builtins.c:276
@@ -2391,39 +2366,6 @@ msgstr ""
 
 # bind
 #: builtins.c:289
-#, fuzzy
-#| msgid ""
-#| "Set Readline key bindings and variables.\n"
-#| "    \n"
-#| "    Bind a key sequence to a Readline function or a macro, or set a\n"
-#| "    Readline variable.  The non-option argument syntax is equivalent to\n"
-#| "    that found in ~/.inputrc, but must be passed as a single argument:\n"
-#| "    e.g., bind '\"\\C-x\\C-r\": re-read-init-file'.\n"
-#| "    \n"
-#| "    Options:\n"
-#| "      -m  keymap         Use KEYMAP as the keymap for the duration of this\n"
-#| "                         command.  Acceptable keymap names are emacs,\n"
-#| "                         emacs-standard, emacs-meta, emacs-ctlx, vi, vi-move,\n"
-#| "                         vi-command, and vi-insert.\n"
-#| "      -l                 List names of functions.\n"
-#| "      -P                 List function names and bindings.\n"
-#| "      -p                 List functions and bindings in a form that can be\n"
-#| "                         reused as input.\n"
-#| "      -S                 List key sequences that invoke macros and their values\n"
-#| "      -s                 List key sequences that invoke macros and their values\n"
-#| "                         in a form that can be reused as input.\n"
-#| "      -V                 List variable names and values\n"
-#| "      -v                 List variable names and values in a form that can\n"
-#| "                         be reused as input.\n"
-#| "      -q  function-name  Query about which keys invoke the named function.\n"
-#| "      -u  function-name  Unbind all keys which are bound to the named function.\n"
-#| "      -r  keyseq         Remove the binding for KEYSEQ.\n"
-#| "      -f  filename       Read key bindings from FILENAME.\n"
-#| "      -x  keyseq:shell-command\tCause SHELL-COMMAND to be executed when\n"
-#| "    \t\t\t\tKEYSEQ is entered.\n"
-#| "    \n"
-#| "    Exit Status:\n"
-#| "    bind returns 0 unless an unrecognized option is given or an error occurs."
 msgid ""
 "Set Readline key bindings and variables.\n"
 "    \n"
@@ -2462,10 +2404,10 @@ msgstr ""
 "Konfiguriert Readline Tastenzuordnungen und Variablen.\n"
 "    \n"
 "    Weist eine Tastensequenz einer Readline Funktion oder einem Makro\n"
-"    zu oder setzt eine Readline Variable.  Der non-option Argument\n"
-"    syntax ist zu den Einträgen in ~/.inputrc äquivalent, aber sie\n"
-"    müssen als einzelnes Argument übergeben werden.  Z.B: bind\n"
-"    '\"\\C-x\\C-r\": re-read-init-file'.\n"
+"    zu oder setzt eine Readline Variable.  Der Argument syntax ist zu\n"
+"    den Einträgen in ~/.inputrc äquivalent, aber sie müssen als\n"
+"    einzelnes Argument übergeben werden.  Z.B: bind '\"\\C-x\\C-r\":\n"
+"    re-read-init-file'.\n"
 "    \n"
 "    Optionen:\n"
 "      -m  Keymap         Benutzt KEYMAP as Tastaturbelegung für die Laufzeit\n"
@@ -2484,12 +2426,18 @@ msgstr ""
 "      -V                 Listet Variablennamen und Werte auf.\n"
 "      -v                 Listet Variablennamen und Werte so auf, dass sie als\n"
 "                         Eingabe verwendet werden können.\n"
-"      -q  Funktionsname  Sucht die Tastenfolgen, welche die angegebene Funktion aufrufen.\n"
+"      -q  Funktionsname  Sucht die Tastenfolgen, welche die angegebene\n"
+"                         Funktion aufrufen.\n"
 "      -u  Funktionsname  Entfernt alle der Funktion zugeordneten Tastenfolgen.\n"
 "      -r  Tastenfolge    Entfernt die Zuweisungen der angegebeben Tastenfolge.\n"
 "      -f  Dateiname      Liest die Tastenzuordnungen aus der angegebenen Datei.\n"
 "      -x  Tastenfolge:Shellkommando\tWeist der Tastenfolge das Shellkommando\n"
 "    \t\t\t\t\tzu.\n"
+"      -X                                Listet mit -x erzeugte\n"
+"                                        Tastenfolgen und deren Werte\n"
+"                                        auf, die Makros aufrufen, dass\n"
+"                                        sie als Eingabe wiederverwendet werden\n"
+"                                        können.\n"
 "    \n"
 "    Rückgabewert: \n"
 "    Bind gibt 0 zurück, wenn keine unerkannte Option angegeben wurde\n"
@@ -3955,7 +3903,6 @@ msgstr ""
 
 # variable_help
 #: builtins.c:1734
-#, fuzzy
 msgid ""
 "Common shell variable names and usage.\n"
 "    \n"
@@ -4009,63 +3956,64 @@ msgid ""
 "    \t\tcommands should be saved on the history list.\n"
 msgstr ""
 "    BASH_VERSION\tVersionsnummer der Bash.\n"
-"    CDPATH\tEine durch Doppelpunkt getrennte Liste von\n"
-"    Verzeichnissen, die\t\tdurchsucht werden, wenn das Argument\n"
-"    von `cd' nicht im\t\taktuellen Verzeichnis gefunden wird.\n"
+"    CDPATH\tEine durch Doppelpunkte getrennte Liste von\n"
+"                Verzeichnissen, die durchsucht werden, wenn das\n"
+"                Argument von `cd' nicht im aktuellen Verzeichnis\n"
+"                gefunden wird.\n"
+"    GLOBIGNORE  Eine durch Doppelpunkte getrennte Liste von\n"
+"                Dateinamenmustern, die für die Dateinamensergänzung\n"
+"                ignoriert werden.\n"
 "    HISTFILE\tDatei, die den Kommandozeilenspeicher enthält.\n"
-"    HISTFILESIZE\tMaximale Zeilenanzahl, die diese Datei\n"
-"    enthalten darf.\n"
+"    HISTFILESIZE\tMaximale Zeilenanzahl, dieser Datei.\n"
 "    HISTSIZE\tMaximale Anzahl von Zeilen, auf die der\n"
-"    Historymechanismus\t\tder Shell zurückgreifen kann.\n"
+"                Historymechanismus der Shell zurückgreifen kann.\n"
 "    HOME\tHeimatverzeichnis des aktuellen Benutzers.\n"
-"    HOSTTYPE\tCPU-Typ des Rechners, auf dem die Bash gegenwärtig\n"
-"    läuft.\n"
+"    HOSTNAME    Der aktuelle Rechnername.\n"
+"    HOSTTYPE\tCPU-Typ des aktuellen Rechners.\n"
 "    IGNOREEOF\tLegt die Reaktion der Shell auf ein EOF-Zeichen fest.\n"
-"    Wenn die Variable eine ganze Zahl enthält, wird diese Anzahl\n"
-"    EOF Zeichen (Ctrl-D) abgewartet, bis die Shell verlassen wird.\n"
-"    Der Vorgabewert ist 10. Ist IGNOREEOF nicht gesetzt,\n"
-"    signalisiert EOF das Ende der Eingabe.\n"
-"    MAILCHECK\tZeitintervall [s], in dem nach angekommener Post\n"
-"    gesucht wird.\n"
-"    MAILPATH\tEine durch Doppelpunkt getrennte Liste von Dateien,\n"
-"    die nach\t\tneu angekommener Post durchsucht werden.\n"
-"    OSTYPE\tBetriebssystemversion, auf der die Bash gegenwärtig\n"
-"    läuft.\n"
+"                Wenn die Variable eine ganze Zahl enthält, wird diese\n"
+"                Anzahl EOF Zeichen (Ctrl-D) abgewartet, bis die Shell\n"
+"                verlassen wird.  Der Vorgabewert ist 10. Ist IGNOREEOF\n"
+"                nicht gesetzt, signalisiert EOF das Ende der Eingabe.\n"
+"    MACHTYPE    Eine Zeichenkette die das aktuell laufende System beschreibt.\n"
+"    MAILCHECK\tZeit in s, nach der nach E-Mail gesehen wird.\n"
+"    MAILPATH\tEine durch Doppelpunkt getrennte Liste von Dateinamen,\n"
+"                die nach E-Mail durchsucht werden.\n"
+"    OSTYPE\tUnix Version, auf der die Bash gegenwärtig läuft.\n"
 "    PATH\tDurch Doppelpunkt getrennte Liste von Verzeichnissen,\n"
-"    die nach Kommandos durchsucht werden.\n"
+"                die nach Kommandos durchsucht werden.\n"
 "    PROMPT_COMMAND\tKommando, das vor der Anzeige einer primären\n"
-"    Eingabeaufforderung (PS1) ausgeführt wird.\n"
-"    PS1\tZeichenkette, die die primäre Eingabeaufforderung enthält.\n"
-"    PS2\tZeichenkette, die die sekundäre Eingabeaufforderung enthält.\n"
+"                        Eingabeaufforderung (PS1) ausgeführt wird.\n"
+"    PS1                 Zeichenkette, die die primäre\n"
+"                        Eingabeaufforderung enthält.\n"
+"    PS2                 Zeichenkette, die die sekundäre\n"
+"                        Eingabeaufforderung enthält.\n"
+"    PWD                 Der vollständige aktuelle Verzeichnisname.\n"
+"    SHELLOPTS           Durch Doppelpunkt getrennte Liste der aktiven\n"
+"                        Shell Optionen.\n"
 "    TERM\tName des aktuellen Terminaltyps.\n"
-"    auto_resume\tEin Wert ungleich Null bewirkt, daß ein einzelnes\n"
-"    Kommando auf einer Zeile zunächst in der Liste\n"
-"    gegenwärtig gestoppter Jobs\tgesucht und dieser in den\n"
-"    Vordergrund geholt wird. `exact' bewirkt, daß das\n"
-"    Kommando genau dem Kommando in der Liste der gestoppten\n"
-"    Jobs entsprechen muß. Wenn die Variable den Wert\n"
-"    `substring' enthält, muß das Kommando einem Substring\n"
-"    der Jobbezeichnung entsprechen. Bei einem anderen Wert müssen\n"
-"    die ersten Zeichen übereinstimmen.\n"
-"    command_oriented_history\tMehrzeilige Kommandos werden im\n"
-"    Kommandozeilenspeicher in einer\tZeile abgelegt, wenn die\n"
-"    Variable ungleich Null gesetzt ist.\n"
-"    histchars Zeichen, die die Befehlswiederholung und die\n"
-"    Schnellersetzung steuern. An erster Stelle steht das\n"
-"    Befehlswiederholungszeichen (normalerweise `!'); an zweiter das\n"
-"    `Schnell-Ersetzen-Zeichen' (normalerweise `^'). Das dritte Zeichen\n"
-"    ist das\t`Kommentarzeichen' (normalerweise `#').\n"
-"    HISTCONTROL Gesetzt auf `ignorespace' werden keine mit einem\n"
-"    \tLeerzeichen oder Tabulator beginnenden Zeilen im\n"
-"    \tKommandospeicher abgelegt. Der Wert `ignoredups' verhindert\n"
-"    \tdas Speichern aufeinanderfolgender identischer\n"
-"    \tZeilen. `ignoreboth' kombiniert beide Einstellungen. Wenn die\n"
-"    \tVariable nicht oder auf einen anderen Wert gesetzt ist, werden\n"
-"    \talle eingegebenen Zeilen im Kommandospeicher abgelegt."
+"    auto_resume Ein Wert ungleich Null bewirkt, daß ein einzelnes\n"
+"                Kommando auf einer Zeile zunächst in der Liste\n"
+"                gegenwärtig gestoppter Jobs gesucht und dieser in den\n"
+"                Vordergrund geholt wird. `exact' bewirkt, daß das\n"
+"                Kommando genau dem Kommando in der Liste der\n"
+"                gestoppten Jobs entsprechen muß. Wenn die Variable den\n"
+"                Wert `substring' enthält, muß das Kommando einem\n"
+"                Substring der Jobbezeichnung entsprechen. Bei einem\n"
+"                anderen Wert müssen die ersten Zeichen übereinstimmen.\n"
+"    histchars         Zeichen, die die Befehlswiederholung und die\n"
+"                      Schnellersetzung steuern. An erster Stelle steht\n"
+"                      das Befehlswiederholungszeichen (normalerweise\n"
+"                      `!'); an zweiter das `Schnell-Ersetzen-Zeichen'\n"
+"                      (normalerweise `^'). Das dritte Zeichen ist das\n"
+"                      `Kommentarzeichen' (normalerweise `#').\n"
+"    HISTIGNORE        Eine durch Doppelpunkt getrennte Liste von\n"
+"                      Mustern, welche die in der\n"
+"                      Befehlswiederholungsliste zu speichernden\n"
+"                      Kommandos angibt.\n"
 
 # pushd
 #: builtins.c:1791
-#, fuzzy
 msgid ""
 "Add directories to stack.\n"
 "    \n"
@@ -4099,8 +4047,8 @@ msgstr ""
 "\n"
 "    Legt ein Verzeichnisnamen auf den Verzeichnisstapel oder rotiert\n"
 "    diesen so,daß das Arbeitsverzeichnis auf der Spitze des Stapels\n"
-"    liegt. OhneArgumente werden die obersten zwei Verzeichnisse auf\n"
-"    dem Stapel vertauscht.\n"
+"    liegt. Ohne angegebene Argumente werden die obersten zwei\n"
+"    Verzeichnisse auf dem Stapel getauscht.\n"
 "\n"
 "    Optionen:\n"
 "    -n\tunterdrückt das Wechseln in das Verzeichnis beim Hinzufügen\n"
@@ -4118,7 +4066,12 @@ msgstr ""
 "\n"
 "    DIR\tLegt DIR auf die Spitze des Verzeichnisstapels und wechselt dorthin.\n"
 "\n"
-"    Der Verzeichnisstapel kann mit dem Kommando `dirs' angezeigt werden."
+"    Der Verzeichnisstapel kann mit dem Kommando `dirs' angezeigt\n"
+"    werden.\n"
+"\n"
+"    Rückgabewert: \n"
+"    Gibt Erfolg zurück, außer wenn ein ungültiges Argument angegeben\n"
+"    wurde oder der Verzeichniswechsel nicht erfolgreich war."
 
 # popd
 #: builtins.c:1825
@@ -4201,6 +4154,31 @@ msgid ""
 "    Exit Status:\n"
 "    Returns success unless an invalid option is supplied or an error occurs."
 msgstr ""
+"Zeigt den Verzeichnisstapel an.\n"
+"\n"
+"    Zeigt die Liste der gegenwärtig gespeicherten Verzeichnisse.\n"
+"    Diese werden mit dem `pushd' Kommando eingetragen und mit dem\n"
+"    `popd' Kommando ausgelesen.\n"
+"\n"
+"    Optionen:\n"
+"      -c        Löscht den Verzeichnisstapel.\n"
+"      -l        Keine Abkürzung für das Heimatverzeichnis durch die\n"
+"                Tilde (~).\n"
+"      -p        Ausgabe von einem Eintrag pro Zeile.\n"
+"      -v        Ausgabe von einem Eintrag pro Zeile mit Angabe der\n"
+"                Position im Stapel<\n"
+"\n"
+"    Argumente:\n"
+"      +N        Gibt das N'te Element von links der Liste aus, die\n"
+"                ohne Argumente ausgegeben wird.  Die Zählung beginnt\n"
+"                bei 0.\n"
+"      -N        Gibt das N'te Element von rechts der Liste aus, die\n"
+"                ohne Argumente ausgegeben wird.  Die Zählung beginnt\n"
+"                bei 0.\n"
+"\n"
+"    Rückgabewert:\n"
+"    Gibt Erfolg zurück, außer bei einer ungültigen Option oder wenn\n"
+"    ein Fehler auftritt."
 
 #: builtins.c:1884
 msgid ""
@@ -4221,6 +4199,24 @@ msgid ""
 "    Returns success if OPTNAME is enabled; fails if an invalid option is\n"
 "    given or OPTNAME is disabled."
 msgstr ""
+"Setzt oder löscht Shell Optionen.\n"
+"\n"
+"    Ändert die in `Optionsname' genannten Shell Optionen.  Ohne\n"
+"    Argumente wird eine Liste der Shell Optionen un deren Stati\n"
+"    ausgegeben.\n"
+"\n"
+"    Optionen:\n"
+"      -o        Beschränkt die Optionsmanen auf die, welche mit \n"
+"                `set -o' definiert werden müssen.\n"
+"      -p        Gibt alle Shelloptionen und deren Stati aus.\n"
+"      -q        Unterdrückt Ausgaben.\n"
+"      -s        Setzt jede Option in `Optionsname.'\n"
+"      -u        Deaktiviert jede Option in `Optionsname'.\n"
+"\n"
+"    Rückgabewert:\n"
+"    Gibt Erfolg zurück, wenn eine Option gesetzt worden ist.  Wenn\n"
+"    eine ungültige Option angegeben wurde oder eine Option deaktiviert\n"
+"    worden ist, wird Fehler zurückgegeben."
 
 #: builtins.c:1905
 msgid ""
@@ -4361,9 +4357,3 @@ msgstr ""
 "Liest Zeilen einer Datei in eine Array Variable.\n"
 "\n"
 "    Ist ein Synonym für `mapfile'."
-
-#~ msgid "Copyright (C) 2009 Free Software Foundation, Inc.\n"
-#~ msgstr "Copyright (C) 2009 Free Software Foundation, Inc.\n"
-
-#~ msgid "License GPLv2+: GNU GPL version 2 or later <http://gnu.org/licenses/gpl.html>\n"
-#~ msgstr "Lizenz GPLv2+: GNU GPL Version 2 oder jünger <http://gnu.org/licenses/gpl.html>\n"
