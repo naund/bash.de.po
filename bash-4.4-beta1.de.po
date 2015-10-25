@@ -1,13 +1,13 @@
 # German language file for GNU Bash 4.3
 # Copyright (C) 2011 Free Software Foundation, Inc.
 # This file is distributed under the same license as the bash package.
-# Nils Naumann <nau@gmx.net>, 1996-2013.
+# Nils Naumann <nau@gmx.net>, 1996-2015.
 msgid ""
 msgstr ""
 "Project-Id-Version: bash 4.3-rc2\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-10-02 07:21-0400\n"
-"PO-Revision-Date: 2014-02-02 18:23+0100\n"
+"PO-Revision-Date: 2015-10-23 22:23+0200\n"
 "Last-Translator: Nils Naumann <nau@gmx.net>\n"
 "Language-Team: German <translation-team-de@lists.sourceforge.net>\n"
 "Language: de\n"
@@ -806,10 +806,9 @@ msgid "%s: not a function"
 msgstr "%s: Ist keine Funktion."
 
 #: builtins/setattr.def:193
-#, fuzzy, c-format
-#| msgid "%s: cannot unset"
+#, c-format
 msgid "%s: cannot export"
-msgstr "%s: `unset' nicht möglich."
+msgstr "%s: exportieren nicht möglich."
 
 #: builtins/shift.def:73 builtins/shift.def:79
 msgid "shift count"
@@ -858,10 +857,9 @@ msgid "%s is a function\n"
 msgstr "%s ist eine Funktion.\n"
 
 #: builtins/type.def:299
-#, fuzzy, c-format
-#| msgid "%s is a shell builtin\n"
+#, c-format
 msgid "%s is a special shell builtin\n"
-msgstr "%s ist eine von der Shell mitgelieferte Funktion.\n"
+msgstr "%s ist eine spezielle eingebaute Funktion.\n"
 
 #: builtins/type.def:301
 #, c-format
@@ -1600,22 +1598,19 @@ msgid "%c%c: invalid option"
 msgstr "%c%c: Ungültige Option"
 
 #: shell.c:1257
-#, fuzzy, c-format
-#| msgid "cannot reset nodelay mode for fd %d"
+#, c-format
 msgid "cannot set uid to %d: effective uid %d"
-msgstr "Konnte den No-Delay Modus für fd %d nicht wieder herstellen."
+msgstr "Konnte nicht die uid in %d ändern: Die geltende uid ist %d"
 
 #: shell.c:1264
-#, fuzzy, c-format
-#| msgid "cannot reset nodelay mode for fd %d"
+#, c-format
 msgid "cannot set gid to %d: effective gid %d"
-msgstr "Konnte den No-Delay Modus für fd %d nicht wieder herstellen."
+msgstr "Konnte nicht die gid in %d ändern: Die geltende gid ist %d"
 
 #: shell.c:1539
-#, fuzzy, c-format
-#| msgid "%s: is a directory"
+#, c-format
 msgid "%s: Is a directory"
-msgstr "%s: ist ein Verzeichnis."
+msgstr "%s: Ist ein Verzeichnis."
 
 #: shell.c:1744
 msgid "I have no name!"
@@ -1903,16 +1898,14 @@ msgid "%s: bad substitution"
 msgstr "%s: Falsche Variablenersetzung."
 
 #: subst.c:6455
-#, fuzzy, c-format
-#| msgid "%s: invalid line count"
+#, c-format
 msgid "%s: invalid indirect expansion"
-msgstr "%s: Ungültige Zeilenanzahlangabe."
+msgstr "%s: Ungültige indirekte Expansion"
 
 #: subst.c:6462
-#, fuzzy, c-format
-#| msgid "`%s': invalid alias name"
+#, c-format
 msgid "%s: invalid variable name"
-msgstr "`%s': Ungültiger Alias Name."
+msgstr "`%s': Ungültiger Variablenname."
 
 #: subst.c:6509
 #, c-format
@@ -2067,10 +2060,8 @@ msgid "%s: %s: compatibility value out of range"
 msgstr "%s: %s: Kompatibilitätswert außerhalb des Gültigkeitsbereiches."
 
 #: version.c:46
-#, fuzzy
-#| msgid "Copyright (C) 2013 Free Software Foundation, Inc."
 msgid "Copyright (C) 2015 Free Software Foundation, Inc."
-msgstr "Copyright (C) 2013 Free Software Foundation, Inc."
+msgstr "Copyright (C) 2015 Free Software Foundation, Inc."
 
 #: version.c:47 version2.c:47
 msgid "License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>\n"
@@ -2090,10 +2081,8 @@ msgid "There is NO WARRANTY, to the extent permitted by law."
 msgstr "Für den größtmöglichen gesetzlich zulässigen Umfang wird jede Haftung ausgeschlossen."
 
 #: version2.c:46
-#, fuzzy
-#| msgid "Copyright (C) 2013 Free Software Foundation, Inc."
 msgid "Copyright (C) 2014 Free Software Foundation, Inc."
-msgstr "Copyright (C) 2013 Free Software Foundation, Inc."
+msgstr "Copyright (C) 2014 Free Software Foundation, Inc."
 
 #: xmalloc.c:91
 #, c-format
@@ -2175,10 +2164,8 @@ msgstr "declare [-aAfFgilrntux] [-p] Variable[=Wert] ..."
 
 #
 #: builtins.c:78
-#, fuzzy
-#| msgid "typeset [-aAfFgilrtux] [-p] name[=value] ..."
 msgid "typeset [-aAfFgilnrtux] [-p] name[=value] ..."
-msgstr "typeset [-aAfFgilrtux] [-p] Name[=Wert] ..."
+msgstr "typeset [-aAfFgilnrtux] [-p] Name[=Wert] ..."
 
 #: builtins.c:80
 msgid "local [option] name[=value] ..."
@@ -2317,10 +2304,8 @@ msgid "type [-afptP] name [name ...]"
 msgstr "type [-afptP] Name [Name ...]"
 
 #: builtins.c:169
-#, fuzzy
-#| msgid "ulimit [-SHabcdefilmnpqrstuvxT] [limit]"
 msgid "ulimit [-SHabcdefiklmnpqrstuvxPT] [limit]"
-msgstr "ulimit [-SHabcdefilmnpqrstuvxT] [Grenzwert]"
+msgstr "ulimit [-SHabcdefiklmnpqrstuvxPT] [Grenze]"
 
 #: builtins.c:172
 msgid "umask [-p] [-S] [mode]"
@@ -2419,20 +2404,16 @@ msgid "complete [-abcdefgjksuv] [-pr] [-DE] [-o option] [-A action] [-G globpat]
 msgstr "complete [-abcdefgjksuv] [-pr] [-DE] [-o Option] [-A Aktion] [-G Suchmuster] [-W Wortliste]  [-F Funktion] [-C Kommando] [-X Filtermuster] [-P Prefix] [-S Suffix] [Name ...]"
 
 #: builtins.c:233
-#, fuzzy
-#| msgid "compgen [-abcdefgjksuv] [-o option]  [-A action] [-G globpat] [-W wordlist]  [-F function] [-C command] [-X filterpat] [-P prefix] [-S suffix] [word]"
 msgid "compgen [-abcdefgjksuv] [-o option] [-A action] [-G globpat] [-W wordlist]  [-F function] [-C command] [-X filterpat] [-P prefix] [-S suffix] [word]"
-msgstr "compgen [-abcdefgjksuv] [-o Option]  [-A Aktion] [-G Suchmuster] [-W Wortliste]  [-F Funktion] [-C Kommando] [-X Filtermuster] [-P Prefix] [-S Suffix] [Wort]"
+msgstr "compgen [-abcdefgjksuv] [-o Option] [-A Aktion] [-G Suchmuster] [-W Wortliste] [-F Funktion] [-C Kommando] [-X Filtermuster] [-P Prefix] [-S Suffix] [Wort]"
 
 #: builtins.c:237
 msgid "compopt [-o|+o option] [-DE] [name ...]"
 msgstr "compopt [-o|+o Option] [-DE] [Name ...]"
 
 #: builtins.c:240
-#, fuzzy
-#| msgid "mapfile [-n count] [-O origin] [-s count] [-t] [-u fd] [-C callback] [-c quantum] [array]"
 msgid "mapfile [-d delim] [-n count] [-O origin] [-s count] [-t] [-u fd] [-C callback] [-c quantum] [array]"
-msgstr "mapfile [-n Anzahl] [-O Quelle] [-s Anzahl] [-t] [-u fd] [-C Callback] [-c Menge] [Feldvariable]"
+msgstr "mapfile [-d Begrenzer] [-n Anzahl] [-O Quelle] [-s Anzahl] [-t] [-u fd] [-C Callback] [-c Menge] [Feldvariable]"
 
 #: builtins.c:242
 msgid "readarray [-n count] [-O origin] [-s count] [-t] [-u fd] [-C callback] [-c quantum] [array]"
@@ -2440,23 +2421,6 @@ msgstr "readarray [-n Anzahl] [-O Quelle] [-s Anzahl] [-t] [-u fd] [-C Callback]
 
 # alias
 #: builtins.c:254
-#, fuzzy
-#| msgid ""
-#| "Define or display aliases.\n"
-#| "    \n"
-#| "    Without arguments, `alias' prints the list of aliases in the reusable\n"
-#| "    form `alias NAME=VALUE' on standard output.\n"
-#| "    \n"
-#| "    Otherwise, an alias is defined for each NAME whose VALUE is given.\n"
-#| "    A trailing space in VALUE causes the next word to be checked for\n"
-#| "    alias substitution when the alias is expanded.\n"
-#| "    \n"
-#| "    Options:\n"
-#| "      -p\tPrint all defined aliases in a reusable format\n"
-#| "    \n"
-#| "    Exit Status:\n"
-#| "    alias returns true unless a NAME is supplied for which no alias has been\n"
-#| "    defined."
 msgid ""
 "Define or display aliases.\n"
 "    \n"
@@ -2479,26 +2443,20 @@ msgstr ""
 "    Ohne Argumente wird die Liste der Aliase (Synonyme) in der Form\n"
 "    `alias Name=Wert' auf die Standardausgabe ausgegeben.\n"
 "\n"
-"    Sonst wird ein Alias für jeden angegebenen Namen definiert, für\n"
-"    den ein Wert angegeben wurde. Wenn `Wert' mit einem Leerzeichen\n"
-"    abschließt, dann wird auch das folgende Wort auf Aliase überprüft.\n"
+"    Sonst wird ein Alias für jeden angegebenen Namen definiert wenn\n"
+"    für diesen auch ein `Wert' angegeben wurde. Wenn `Wert' mit einem\n"
+"    Leerzeichen endet, dann wird auch das nächste Wort auf Aliase\n"
+"    überprüft.\n"
 "\n"
 "    Optionen:\n"
 "      -p\tGibt alle definierten Aliase aus.\n"
 "    \n"
 "    Rückgabewert:\n"
-"    Meldet Erfolg, außer wenn `Name' nicht existiert."
+"    Meldet Erfolg, außer wenn `Name' angegeben worden ist, für den\n"
+"    kein Alias definiert wurde."
 
 # unalias
 #: builtins.c:276
-#, fuzzy
-#| msgid ""
-#| "Remove each NAME from the list of defined aliases.\n"
-#| "    \n"
-#| "    Options:\n"
-#| "      -a\tremove all alias definitions.\n"
-#| "    \n"
-#| "    Return success unless a NAME is not an existing alias."
 msgid ""
 "Remove each NAME from the list of defined aliases.\n"
 "    \n"
@@ -2512,45 +2470,10 @@ msgstr ""
 "    Optionen:\n"
 "      -a\tEnferne alle Alias Definitionen.\n"
 "    \n"
-"    Gibt immer 0 zurück wenn der Alias existierte."
+"    Gibt immer Erfolg zurück, außer wenn der Alias nicht existiert."
 
 # bind
 #: builtins.c:289
-#, fuzzy
-#| msgid ""
-#| "Set Readline key bindings and variables.\n"
-#| "    \n"
-#| "    Bind a key sequence to a Readline function or a macro, or set a\n"
-#| "    Readline variable.  The non-option argument syntax is equivalent to\n"
-#| "    that found in ~/.inputrc, but must be passed as a single argument:\n"
-#| "    e.g., bind '\"\\C-x\\C-r\": re-read-init-file'.\n"
-#| "    \n"
-#| "    Options:\n"
-#| "      -m  keymap         Use KEYMAP as the keymap for the duration of this\n"
-#| "                         command.  Acceptable keymap names are emacs,\n"
-#| "                         emacs-standard, emacs-meta, emacs-ctlx, vi, vi-move,\n"
-#| "                         vi-command, and vi-insert.\n"
-#| "      -l                 List names of functions.\n"
-#| "      -P                 List function names and bindings.\n"
-#| "      -p                 List functions and bindings in a form that can be\n"
-#| "                         reused as input.\n"
-#| "      -S                 List key sequences that invoke macros and their values\n"
-#| "      -s                 List key sequences that invoke macros and their values\n"
-#| "                         in a form that can be reused as input.\n"
-#| "      -V                 List variable names and values\n"
-#| "      -v                 List variable names and values in a form that can\n"
-#| "                         be reused as input.\n"
-#| "      -q  function-name  Query about which keys invoke the named function.\n"
-#| "      -u  function-name  Unbind all keys which are bound to the named function.\n"
-#| "      -r  keyseq         Remove the binding for KEYSEQ.\n"
-#| "      -f  filename       Read key bindings from FILENAME.\n"
-#| "      -x  keyseq:shell-command\tCause SHELL-COMMAND to be executed when\n"
-#| "    \t\t\t\tKEYSEQ is entered.\n"
-#| "      -X\t\t     List key sequences bound with -x and associated commands\n"
-#| "                         in a form that can be reused as input.\n"
-#| "    \n"
-#| "    Exit Status:\n"
-#| "    bind returns 0 unless an unrecognized option is given or an error occurs."
 msgid ""
 "Set Readline key bindings and variables.\n"
 "    \n"
@@ -2586,7 +2509,7 @@ msgid ""
 "    Exit Status:\n"
 "    bind returns 0 unless an unrecognized option is given or an error occurs."
 msgstr ""
-"Konfiguriert Readline Tastenzuordnungen und Variablen.\n"
+"Bestimmt Readline Tastenzuordnungen und Variablen.\n"
 "    \n"
 "    Weist eine Tastensequenz einer Readline Funktion oder einem Makro\n"
 "    zu oder setzt eine Readline Variable.  Der Argument syntax ist zu\n"
@@ -2711,40 +2634,6 @@ msgstr ""
 
 # cd
 #: builtins.c:385
-#, fuzzy
-#| msgid ""
-#| "Change the shell working directory.\n"
-#| "    \n"
-#| "    Change the current directory to DIR.  The default DIR is the value of the\n"
-#| "    HOME shell variable.\n"
-#| "    \n"
-#| "    The variable CDPATH defines the search path for the directory containing\n"
-#| "    DIR.  Alternative directory names in CDPATH are separated by a colon (:).\n"
-#| "    A null directory name is the same as the current directory.  If DIR begins\n"
-#| "    with a slash (/), then CDPATH is not used.\n"
-#| "    \n"
-#| "    If the directory is not found, and the shell option `cdable_vars' is set,\n"
-#| "    the word is assumed to be  a variable name.  If that variable has a value,\n"
-#| "    its value is used for DIR.\n"
-#| "    \n"
-#| "    Options:\n"
-#| "        -L\tforce symbolic links to be followed: resolve symbolic links in\n"
-#| "    \tDIR after processing instances of `..'\n"
-#| "        -P\tuse the physical directory structure without following symbolic\n"
-#| "    \tlinks: resolve symbolic links in DIR before processing instances\n"
-#| "    \tof `..'\n"
-#| "        -e\tif the -P option is supplied, and the current working directory\n"
-#| "    \tcannot be determined successfully, exit with a non-zero status\n"
-#| "        -@  on systems that support it, present a file with extended attributes\n"
-#| "            as a directory containing the file attributes\n"
-#| "    \n"
-#| "    The default is to follow symbolic links, as if `-L' were specified.\n"
-#| "    `..' is processed by removing the immediately previous pathname component\n"
-#| "    back to a slash or the beginning of DIR.\n"
-#| "    \n"
-#| "    Exit Status:\n"
-#| "    Returns 0 if the directory is changed, and if $PWD is set successfully when\n"
-#| "    -P is used; non-zero otherwise."
 msgid ""
 "Change the shell working directory.\n"
 "    \n"
@@ -2783,18 +2672,19 @@ msgstr ""
 "Wechselt das Arbeitsverzeichnis.\n"
 "    \n"
 "    Wechselt in das angegebene Abeitsverzeichnis.  Ohne Angabe eines\n"
-"    Verzeichnisses wird in das Heimatverzeichnis gewechselt.\n"
+"    Verzeichnisses wird in das in der HOME Variable definierte\n"
+"    Verzeichnis gewechselt.\n"
 "    \n"
-"    Die Variable CDPATH gibt eine Liste von Orten an, in denen nach\n"
-"    dem angegebeben Verzeichnisnamen gesucht wird.  Die Pfadnamen\n"
-"    werden durch Doppelpunkte »:« getrennt. Ein leerer Pfadname\n"
-"    bezeichnet das aktuelle Verzeichnis. Wenn ein vollständiger\n"
-"    Pfadname angegeben ist, wird der CDPATH nicht durchsucht.\n"
+"    Die Variable CDPATH definiert den Suchpfad, in dem nach dem\n"
+"    angegebeben Verzeichnisnamen gesucht wird.  Mehrere Pfade werden\n"
+"    durch Doppelpunkte »:« getrennt. Ein leerer Pfadname entspricht\n"
+"    dem aktuellen Verzeichnis.  Mit einem vollständigen Pfadnamen wird\n"
+"    CDPATH nicht benutzt.\n"
 "    \n"
-"    Wenn kein entsprechendes Verzeichnis gefunden wurde und die Shell\n"
-"    Option `cdable_vars' gesetzt ist, dann wird angenommen, dass der\n"
-"    Verzeichnisname einen Variablennamen enthält.  Wenn diese ein Wert\n"
-"    besitzt, wird dieser als Verzeichnisname verwendet.\n"
+"    Wird kein entsprechendes Verzeichnis gefunden und die Shell Option\n"
+"    `cdable_vars' ist gesetzt, dann wird der `Wert' als Variable\n"
+"    interpretiert.  Dessen Inhalt wird dann als Verzeichnisname\n"
+"    verwendet.\n"
 "    \n"
 "    Optionen:\n"
 "        -L\tErzwingt das symbolischen Verweisen gefolgt wird.\n"
@@ -2804,9 +2694,9 @@ msgstr ""
 "                Links im aktuellen Verzeichnis werden vor dem\n"
 "                übergeordneten Verzeichnis aufgelöst.\n"
 "        -e\tWenn mit der »-P« das aktuelle Arbeitsverzeichns nicht\n"
-"                ermittelt werden kann, wird ein Rückgabwert ungleich 0\n"
-"                geliefert.\n"
-"        -@      Wenn es das System Unterstützt wird eine Datei mit  \n"
+"                ermittelt werden kann, wird mit einem Rückgabwert\n"
+"                ungleich 0 abgebrochen.\n"
+"        -@      Wenn es das System unterstützt wird eine Datei mit  \n"
 "                erweiterten Attributen als ein Verzeichnis angezeigt,\n"
 "                welches die erweiterten Attribute enthält.\n"
 "    \n"
@@ -2815,29 +2705,14 @@ msgstr ""
 "    Dateiname am letzten Schrägstrich gekürzt wird oder es wird der\n"
 "    Anfang von DIR verwendet.\n"
 "    \n"
-"    Rückgabewert: \n"
-"    Der Rückgabewert ist 0, wenn das Verzeichnis gewechselt wurde,\n"
-"    sonst ungleich 0.\n"
-"    Mit den Optionen »-P -e« wird ein Rückgabewert ungleich 0 auch\n"
-"    dann gesetzt, wenn das neue aktuelle Verzeichnis nicht ermittelt\n"
-"    werden konnte."
+"    Rückgabewert:\n"
+"\n"
+"    Der Rückgabewert ist 0, wenn das Verzeichnis erfolgreiche\n"
+"    gewechselt wurde, oder wenn die -P Option angegeben und $PWD\n"
+"    erfolgreich gesetzt werden konnte.  Sonst ist er ungleich 0."
 
 # pwd
 #: builtins.c:423
-#, fuzzy
-#| msgid ""
-#| "Print the name of the current working directory.\n"
-#| "    \n"
-#| "    Options:\n"
-#| "      -L\tprint the value of $PWD if it names the current working\n"
-#| "    \tdirectory\n"
-#| "      -P\tprint the physical directory, without any symbolic links\n"
-#| "    \n"
-#| "    By default, `pwd' behaves as if `-L' were specified.\n"
-#| "    \n"
-#| "    Exit Status:\n"
-#| "    Returns 0 unless an invalid option is given or the current directory\n"
-#| "    cannot be read."
 msgid ""
 "Print the name of the current working directory.\n"
 "    \n"
@@ -2855,7 +2730,8 @@ msgstr ""
 "Gibt den Namen des aktuellen Arbeitsverzeichnisses aus.\n"
 "    \n"
 "    Optionen:\n"
-"      -L\tGibt den Inhalt der Variable $PWD aus.\n"
+"      -L\tGibt den Inhalt der Variable $PWD aus, wenn sie das aktuelle\n"
+"\t\tArbeitsverzeichnis enthält.\n"
 "      -P\tGibt den physischen Verzeichnispfad aus, ohne\n"
 "                symbolische Verweise.\n"
 "    \n"
@@ -2909,22 +2785,6 @@ msgstr ""
 
 # command
 #: builtins.c:469
-#, fuzzy
-#| msgid ""
-#| "Execute a simple command or display information about commands.\n"
-#| "    \n"
-#| "    Runs COMMAND with ARGS suppressing  shell function lookup, or display\n"
-#| "    information about the specified COMMANDs.  Can be used to invoke commands\n"
-#| "    on disk when a function with the same name exists.\n"
-#| "    \n"
-#| "    Options:\n"
-#| "      -p\tuse a default value for PATH that is guaranteed to find all of\n"
-#| "    \tthe standard utilities\n"
-#| "      -v\tprint a description of COMMAND similar to the `type' builtin\n"
-#| "      -V\tprint a more verbose description of each COMMAND\n"
-#| "    \n"
-#| "    Exit Status:\n"
-#| "    Returns exit status of COMMAND, or failure if COMMAND is not found."
 msgid ""
 "Execute a simple command or display information about commands.\n"
 "    \n"
@@ -2949,7 +2809,7 @@ msgstr ""
 "    werden, wenn eine Shell-Funktion gleichen Namens existiert.\n"
 "    \n"
 "    Optionen:\n"
-"      -p\tStandardwert für PATH verwenden. Dies garantiert, dass alle\n"
+"      -p\ts wird ein Standardwert für PATH verwendet, der garantiert, dass alle\n"
 "    \t\tStandard-Dienstprogramme gefunden werden.\n"
 "      -v\tBeschreibung des Kommandos ausgeben.\n"
 "    \t\tÄhnlich dem eingebauten Kommando »type«.\n"
