@@ -1,13 +1,13 @@
-# German language file for GNU Bash 4.3
+# German language file for GNU Bash 4.4-beta1
 # Copyright (C) 2011 Free Software Foundation, Inc.
 # This file is distributed under the same license as the bash package.
 # Nils Naumann <nau@gmx.net>, 1996-2015.
 msgid ""
 msgstr ""
-"Project-Id-Version: bash 4.3-rc2\n"
+"Project-Id-Version: bash 4.4-beta1\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-10-02 07:21-0400\n"
-"PO-Revision-Date: 2015-11-01 10:23+0100\n"
+"PO-Revision-Date: 2015-11-01 23:07+0100\n"
 "Last-Translator: Nils Naumann <nau@gmx.net>\n"
 "Language-Team: German <translation-team-de@lists.sourceforge.net>\n"
 "Language: de\n"
@@ -4530,7 +4530,9 @@ msgstr ""
 "    eine ungültige Option angegeben wurde oder eine Option deaktiviert\n"
 "    worden ist, wird Fehler zurückgegeben."
 
+# printf
 #: builtins.c:1916
+#, fuzzy
 msgid ""
 "Formats and prints ARGUMENTS under control of the FORMAT.\n"
 "    \n"
@@ -4561,6 +4563,35 @@ msgid ""
 "    Returns success unless an invalid option is given or a write or assignment\n"
 "    error occurs."
 msgstr ""
+"Formatiert die Argumente entsprechend der Formatanweisungen und gibt sie aus.\n"
+"    \n"
+"    Options:\n"
+"      -v var\tWeist die Ausgabe der Variable var zu anstatt sie auf die\n"
+"    \t\tStandardausgabe auszugeben.\n"
+"    \n"
+"    \"Format\" ist eine Zeichenkette welche drei Objekttypen enthalten\n"
+"    kann: Einfache Zeichen, welche unverändert ausgegeben werden,\n"
+"    Escape-Sequenzen, die nach dem Umwandeln ausgegeben werden und\n"
+"    Formatanweisungen, deren nachfolgendes Argument ausgewertet wird.\n"
+"\n"
+"    Es werden die in printf(1) beschriebenen Formatanweisungen und\n"
+"    folgende Erweiterungen ausgewertet:\n"
+"    \n"
+"      %b\texpand backslash escape sequences in the corresponding argument\n"
+"      %q\tquote the argument in a way that can be reused as shell input\n"
+"      \n"
+"      %(fmt)T\tGibt das in \"fmt\" beschribene Zeitformat so aus, dass es als\n"
+"                Formatanweisung für strftime(3) verwendet werden kann.\n"
+"\n"
+"    Die Formatanweisung wird so oft wie nötig angewendet, um alle\n"
+"    Argumente auszugeben.  Wenn zu wenig Argumente angegeben sind,\n"
+"    wird ein leeres Argument oder ein Null Wert bzw. Zeichenkette\n"
+"    eingesetzt.\n"
+"    \n"
+"    \n"
+"    Rückgabewert:\n"
+"    Returns success unless an invalid option is given or a write or assignment\n"
+"    error occurs."
 
 #: builtins.c:1950
 msgid ""
@@ -4673,5 +4704,3 @@ msgstr ""
 "\n"
 "    Ist ein Synonym für `mapfile'."
 
-#~ msgid "Copyright (C) 2012 Free Software Foundation, Inc."
-#~ msgstr "Copyright (C) 2012 Free Software Foundation, Inc."
