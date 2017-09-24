@@ -1,13 +1,13 @@
-# German language file for GNU Bash 4.4-beta1
+# German language file for GNU Bash 4.4
 # Copyright (C) 2011 Free Software Foundation, Inc.
 # This file is distributed under the same license as the bash package.
-# Nils Naumann <nau@gmx.net>, 1996-2016.
+# Nils Naumann <nau@gmx.net>, 1996-2017.
 msgid ""
 msgstr ""
 "Project-Id-Version: bash 4.4\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-09-10 12:42-0400\n"
-"PO-Revision-Date: 2017-01-28 19:22+0100\n"
+"PO-Revision-Date: 2017-06-11 12:12+0200\n"
 "Last-Translator: Nils Naumann <nau@gmx.net>\n"
 "Language-Team: German <translation-team-de@lists.sourceforge.net>\n"
 "Language: de\n"
@@ -390,7 +390,7 @@ msgstr "Kann %s nicht in der dynamischen Bibiliothek finden %s: %s"
 #: builtins/enable.def:387
 #, c-format
 msgid "load function for %s returns failure (%d): not loaded"
-msgstr ""
+msgstr "Laden der Funktion %s lieferte ein Fehler (%d): Nicht geladen."
 
 #: builtins/enable.def:512
 #, c-format
@@ -1166,7 +1166,7 @@ msgstr ""
 #: jobs.c:1590
 #, c-format
 msgid "describe_pid: %ld: no such pid"
-msgstr "describe_pid: %ld: Prozeßnummer existiert nicht."
+msgstr "describe_pid: %ld: Prozessnummer existiert nicht."
 
 #: jobs.c:1605
 #, c-format
@@ -1223,7 +1223,7 @@ msgstr ""
 #: jobs.c:2347 nojobs.c:654
 #, c-format
 msgid "wait: pid %ld is not a child of this shell"
-msgstr "wait: Prozeß %ld wurde nicht von dieser Shell gestartet."
+msgstr "wait: Prozess %ld wurde nicht von dieser Shell gestartet."
 
 #: jobs.c:2602
 #, c-format
@@ -1628,7 +1628,7 @@ msgstr "Konnte das /tmp Verzeichnis nicht finden, bitte anlegen."
 
 #: shell.c:351
 msgid "/tmp must be a valid directory name"
-msgstr "/tmp muß ein gültiger Verzeichnisname sein."
+msgstr "/tmp muss ein gültiger Verzeichnisname sein."
 
 #: shell.c:927
 #, c-format
@@ -1793,11 +1793,11 @@ msgstr "Angehalten (Signal)"
 
 #: siglist.c:127
 msgid "Continue"
-msgstr "Prozeßbearbeitung wieder aufgenommen."
+msgstr "Prozessbearbeitung wieder aufgenommen."
 
 #: siglist.c:135
 msgid "Child death or stop"
-msgstr "Kindprozeß abgebrochen oder gestoppt."
+msgstr "Kindprozess abgebrochen oder gestoppt."
 
 #: siglist.c:139
 msgid "Stopped (tty input)"
@@ -1857,7 +1857,7 @@ msgstr "Systemausfall steht bevor."
 
 #: siglist.c:195
 msgid "migrate process to another CPU"
-msgstr "Verlege den Prozeß auf einen anderen Prozessor."
+msgstr "Verlege den Prozess auf einen anderen Prozessor."
 
 #: siglist.c:199
 msgid "programming error"
@@ -1900,11 +1900,11 @@ msgstr "%s: Kann einem Feldelement keine Liste zuweisen."
 
 #: subst.c:5740 subst.c:5756
 msgid "cannot make pipe for process substitution"
-msgstr "Kann keine Pipe für die Prozeßersetzung erzeugen."
+msgstr "Kann keine Pipe für die Prozessersetzung erzeugen."
 
 #: subst.c:5798
 msgid "cannot make child for process substitution"
-msgstr "Kann den Kindsprozess für die Prozeßersetzung nicht erzeugen."
+msgstr "Kann den Kindsprozess für die Prozessersetzung nicht erzeugen."
 
 #: subst.c:5848
 #, c-format
@@ -2714,7 +2714,7 @@ msgid ""
 msgstr ""
 "Wechselt das Arbeitsverzeichnis.\n"
 "\n"
-"    Wechselt in das angegebene Abeitsverzeichnis.  Ohne Angabe eines\n"
+"    Wechselt in das angegebene Arbeitsverzeichnis.  Ohne Angabe eines\n"
 "    Verzeichnisses wird in das in der HOME Variable definierte\n"
 "    Verzeichnis gewechselt.\n"
 "\n"
@@ -4381,13 +4381,13 @@ msgstr ""
 "    SHELLOPTS           Durch Doppelpunkt getrennte Liste der aktiven\n"
 "                        Shell Optionen.\n"
 "    TERM\tName des aktuellen Terminaltyps.\n"
-"    auto_resume Ein Wert ungleich Null bewirkt, daß ein einzelnes\n"
+"    auto_resume Ein Wert ungleich Null bewirkt, dass ein einzelnes\n"
 "                Kommando auf einer Zeile zunächst in der Liste\n"
 "                gegenwärtig gestoppter Jobs gesucht und dieser in den\n"
-"                Vordergrund geholt wird. `exact' bewirkt, daß das\n"
+"                Vordergrund geholt wird. `exact' bewirkt, dass das\n"
 "                Kommando genau dem Kommando in der Liste der\n"
-"                gestoppten Jobs entsprechen muß. Wenn die Variable den\n"
-"                Wert `substring' enthält, muß das Kommando einem\n"
+"                gestoppten Jobs entsprechen muss. Wenn die Variable den\n"
+"                Wert `substring' enthält, muss das Kommando einem\n"
 "                Substring der Jobbezeichnung entsprechen. Bei einem\n"
 "                anderen Wert müssen die ersten Zeichen übereinstimmen.\n"
 "    histchars         Zeichen, die die Befehlswiederholung und die\n"
