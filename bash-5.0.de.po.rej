@@ -1,0 +1,442 @@
+Index: bash-5.0.de.po
+--- bash-5.0.de.po	(date 1568578637489)
++++ bash-5.0.de.po	(date 1568566829000)
+@@ -1,26 +1,25 @@
+-# German language file for GNU Bash 5.0
+-# Copyright (C) 2019 Free Software Foundation, Inc.
++# German language file for GNU Bash 4.4
++# Copyright (C) 2018 Free Software Foundation, Inc.
+ # This file is distributed under the same license as the bash package.
+-# Nils Naumann <nau@gmx.net>, 1996-2019.
++# Nils Naumann <nau@gmx.net>, 1996-2018.
+ msgid ""
+ msgstr ""
+ "Project-Id-Version: bash 5.0-beta2\n"
+ "Report-Msgid-Bugs-To: \n"
+ "POT-Creation-Date: 2018-12-19 15:52-0500\n"
+-"PO-Revision-Date: 2019-09-15 22:15+0200\n"
+-"Last-Translator: Roland Illig <roland.illig@gmx.de>\n"
++"PO-Revision-Date: 2018-12-01 23:58+0100\n"
++"Last-Translator: Nils Naumann <nau@gmx.net>\n"
+ "Language-Team: German <translation-team-de@lists.sourceforge.net>\n"
+-"Language: de\n"
+ "MIME-Version: 1.0\n"
+ "Content-Type: text/plain; charset=UTF-8\n"
+-"Content-Transfer-Encoding: 8bit\n"
++"Content-Transfer-Encoding: 8-bit\n"
++"Language: de\n"
+ "X-Bugs: Report translation errors to the Language-Team address.\n"
+ "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+-"X-Generator: Poedit 2.2.3\n"
+ 
+ #: arrayfunc.c:58
+ msgid "bad array subscript"
+-msgstr "Falscher Feldindex."
++msgstr "Falscher Feldbezeichner."
+ 
+ #: arrayfunc.c:377 builtins/declare.def:638 variables.c:2254 variables.c:2280
+ #: variables.c:3108
+@@ -85,17 +85,18 @@
+ #: braces.c:429
+ #, c-format
+ msgid "brace expansion: failed to allocate memory for %u elements"
+-msgstr "Klammererweiterung: Konnte keinen Speicher für %u Elemente zuweisen."
++msgstr ""
++"Klammererweiterung: Für %u Elemente konnte kein Speicher zuweisen werden."
+ 
+ #: braces.c:474
+ #, c-format
+ msgid "brace expansion: failed to allocate memory for `%s'"
+-msgstr "Klammererweiterung: Konnte keinen Speicher für »%s« zuweisen."
++msgstr "Klammererweiterung: Konnte keinen Speicher für `%s' zuweisen."
+ 
+ #: builtins/alias.def:131 variables.c:1842
+ #, c-format
+ msgid "`%s': invalid alias name"
+-msgstr "»%s«: Ungültiger Aliasname."
++msgstr "`%s': Ungültiger Alias Name."
+ 
+ #: builtins/bind.def:122 builtins/bind.def:125
+ msgid "line editing not enabled"
+@@ -820,17 +815,17 @@
+ #: builtins/set.def:852
+ msgid "cannot simultaneously unset a function and a variable"
+ msgstr ""
+-"Gleichzeitiges »unset« einer Funktion und einer Variable ist nicht möglich."
++"Gleichzeitiges `unset' einer Funktion und einer Variable ist nicht möglich."
+ 
+ #: builtins/set.def:904
+ #, c-format
+ msgid "%s: cannot unset"
+-msgstr "%s: »unset« nicht möglich."
++msgstr "%s: `unset' nicht möglich."
+ 
+ #: builtins/set.def:925 variables.c:3813
+ #, c-format
+ msgid "%s: cannot unset: readonly %s"
+-msgstr "%s: »unset« nicht möglich: %s ist schreibgeschützt"
++msgstr "%s: `unset' nicht möglich: Schreibgeschützt %s"
+ 
+ #: builtins/set.def:938
+ #, c-format
+@@ -845,20 +840,20 @@
+ #: builtins/setattr.def:194
+ #, c-format
+ msgid "%s: cannot export"
+-msgstr "%s: Exportieren nicht möglich."
++msgstr "%s: exportieren nicht möglich."
+ 
+ #: builtins/shift.def:73 builtins/shift.def:79
+ msgid "shift count"
+-msgstr "Verschiebeanzahl"
++msgstr "Verschiebezähler"
+ 
+ #: builtins/shopt.def:310
+ msgid "cannot set and unset shell options simultaneously"
+-msgstr "Kann nicht Shelloptionen gleichzeitig aktivieren und deaktivieren."
++msgstr "Kann nicht Shell Optinen gleichzeitig aktivieren und deaktivieren."
+ 
+ #: builtins/shopt.def:420
+ #, c-format
+ msgid "%s: invalid shell option name"
+-msgstr "%s: Ungültiger Name für Shelloption."
++msgstr "%s: Ungültiger Shell Optionen Name."
+ 
+ #: builtins/source.def:128
+ msgid "filename argument required"
+@@ -1025,17 +1020,17 @@
+ #: execute_cmd.c:4683
+ #, c-format
+ msgid "%s: maximum source nesting level exceeded (%d)"
+-msgstr "%s: Maximale Quellcode-Schachtelungstiefe überschritten (%d)"
++msgstr "%s: Maximale Quellcode Schachtelungstiefe überschritten (%d)"
+ 
+ #: execute_cmd.c:4791
+ #, c-format
+ msgid "%s: maximum function nesting level exceeded (%d)"
+-msgstr "%s: maximale Schachtelungstiefe für Funktionen überschritten (%d)"
++msgstr "%s: maximale Funkrionsschachtelungstiefe überschritten (%d)"
+ 
+ #: execute_cmd.c:5340
+ #, c-format
+ msgid "%s: restricted: cannot specify `/' in command names"
+-msgstr "%s: eingeschränkt: `/' ist in Kommandonamen unzulässig."
++msgstr "%s: Verboten:  `/' ist in Kommandonamen unzulässig."
+ 
+ #: execute_cmd.c:5438
+ #, c-format
+@@ -1140,17 +1135,17 @@
+ 
+ #: general.c:69
+ msgid "getcwd: cannot access parent directories"
+-msgstr "getcwd: Kann auf die übergeordneten Verzeichnisse nicht zugreifen."
++msgstr "getwd: Kann auf das übergeordnete Verzeichnis nicht zugreifen."
+ 
+ #: input.c:99 subst.c:5930
+ #, c-format
+ msgid "cannot reset nodelay mode for fd %d"
+-msgstr "Konnte den No-Delay-Modus für fd %d nicht wiederherstellen."
++msgstr "Konnte den No-Delay Modus für fd %d nicht wieder herstellen."
+ 
+ #: input.c:266
+ #, c-format
+ msgid "cannot allocate new file descriptor for bash input from fd %d"
+-msgstr "Kann keinen neuen Dateideskriptor für die Eingabe von fd %d zuweisen."
++msgstr "Kann keinen neuen Filedeskriptor für die Eingabe von fd %d zuweisen."
+ 
+ # Debug Ausgabe
+ #: input.c:274
+@@ -1172,13 +1167,11 @@
+ msgid "deleting stopped job %d with process group %ld"
+ msgstr "Lösche den gestoppten Prozess %d der Prozessgruppe %ld."
+ 
+-# https://lists.gnu.org/archive/html/bug-bash/2019-09/msg00024.html
+ #: jobs.c:1307
+ #, c-format
+ msgid "add_process: process %5ld (%s) in the_pipeline"
+ msgstr ""
+ 
+-# https://lists.gnu.org/archive/html/bug-bash/2019-09/msg00024.html
+ #: jobs.c:1310
+ #, c-format
+ msgid "add_process: pid %5ld (%s) marked as still alive"
+@@ -1490,29 +1484,29 @@
+ #: parse.y:3536 parse.y:3906
+ #, c-format
+ msgid "unexpected EOF while looking for matching `%c'"
+-msgstr "Dateiende beim Suchen nach »%c« erreicht."
++msgstr "Dateiende beim Suchen nach `%c' erreicht."
+ 
+ #: parse.y:4606
+ msgid "unexpected EOF while looking for `]]'"
+-msgstr "Dateiende beim Suchen nach »]]« erreicht."
++msgstr "Dateiende beim Suchen nach `]]' erreicht."
+ 
+ #: parse.y:4611
+ #, c-format
+ msgid "syntax error in conditional expression: unexpected token `%s'"
+-msgstr "Syntaxfehler im bedingten Ausdruck: Unerwartetes Symbol »%s«."
++msgstr "Syntaxfehler im bedingten Ausdruck: Unerwartetes Zeichen `%s'."
+ 
+ #: parse.y:4615
+ msgid "syntax error in conditional expression"
+-msgstr "Syntaxfehler im bedingten Ausdruck."
++msgstr "Syntaxfehler im bedingen Ausdruck."
+ 
+ #: parse.y:4693
+ #, c-format
+ msgid "unexpected token `%s', expected `)'"
+-msgstr "Unerwartetes Zeichen: »%s« anstatt von »)«"
++msgstr "Unerwartetes Zeichen: `%s' anstatt von `)'"
+ 
+ #: parse.y:4697
+ msgid "expected `)'"
+-msgstr "»)« erwartet."
++msgstr "`)' erwartet."
+ 
+ #: parse.y:4725
+ #, c-format
+@@ -1559,35 +1553,35 @@
+ #: parse.y:6245
+ #, c-format
+ msgid "syntax error near unexpected token `%s'"
+-msgstr "Syntaxfehler beim unerwarteten Symbol »%s«"
++msgstr "Syntaxfehler beim unerwarteten Wort `%s'"
+ 
+ #: parse.y:6263
+ #, c-format
+ msgid "syntax error near `%s'"
+-msgstr "Syntaxfehler bei »%s«"
++msgstr "Syntaxfehler beim unerwarteten Wort `%s'"
+ 
+ #: parse.y:6273
+ msgid "syntax error: unexpected end of file"
+-msgstr "Syntaxfehler: Unerwartetes Dateiende."
++msgstr "Syntax Fehler: Unerwartetes Dateiende."
+ 
+ #: parse.y:6273
+ msgid "syntax error"
+-msgstr "Syntaxfehler"
++msgstr "Syntax Fehler"
+ 
+ # Du oder Sie?
+ #: parse.y:6335
+ #, c-format
+ msgid "Use \"%s\" to leave the shell.\n"
+-msgstr "Verwenden Sie »%s«, um die Shell zu verlassen.\n"
++msgstr "Benutze \"%s\" um die Shell zu verlassen.\n"
+ 
+ #: parse.y:6497
+ msgid "unexpected EOF while looking for matching `)'"
+-msgstr "Dateiende beim Suchen nach zugehöriger »)« erreicht."
++msgstr "Dateiende beim Suchen nach passender `)' erreicht."
+ 
+ #: pcomplete.c:1132
+ #, c-format
+ msgid "completion: function `%s' not found"
+-msgstr "completion: Funktion »%s« nicht gefunden."
++msgstr "completion: Funktion `%s' nicht gefunden."
+ 
+ #: pcomplete.c:1722
+ #, c-format
+@@ -1602,12 +1596,12 @@
+ #: print_cmd.c:302
+ #, c-format
+ msgid "print_command: bad connector `%d'"
+-msgstr "print_command: Falsches Verbindungszeichen »%d«."
++msgstr "print_command: Falsches Verbindungszeichen `%d'."
+ 
+ #: print_cmd.c:375
+ #, c-format
+ msgid "xtrace_set: %d: invalid file descriptor"
+-msgstr "xtrace_set: %d: Ungültiger Dateideskriptor."
++msgstr "xtrace_set: %d: Ungültige Dateibeschreibung."
+ 
+ #: print_cmd.c:380
+ msgid "xtrace_set: NULL file pointer"
+@@ -1952,21 +1939,21 @@
+ #: subst.c:5920
+ #, c-format
+ msgid "cannot open named pipe %s for reading"
+-msgstr "Kann nicht die benannte Pipe %s zum Lesen öffnen."
++msgstr "Kann nicht die benannte Pipe %s zum lesen öffnen."
+ 
+ #: subst.c:5922
+ #, c-format
+ msgid "cannot open named pipe %s for writing"
+-msgstr "Kann nicht die benannte Pipe %s zum Schreiben öffnen."
++msgstr "Kann nicht die benannte Pipe %s zum schreiben öffnen."
+ 
+ #: subst.c:5945
+ #, c-format
+ msgid "cannot duplicate named pipe %s as fd %d"
+-msgstr "Kann die benannte Pipe %s nicht auf fd %d duplizieren."
++msgstr "Kann die benannte Pipe %s nicht auf fd %d."
+ 
+ #: subst.c:6062
+ msgid "command substitution: ignored null byte in input"
+-msgstr "Kommandoersetzung: NULL-Byte in der Eingabe ignoriert."
++msgstr "Kommansosubstitution: NULL byte in der Eingabe ignoriert."
+ 
+ #: subst.c:6190
+ msgid "cannot make pipe for command substitution"
+@@ -1979,22 +1966,22 @@
+ # interner Fehler
+ #: subst.c:6259
+ msgid "command_substitute: cannot duplicate pipe as fd 1"
+-msgstr "command_substitute: Kann Pipe nicht als Dateideskriptor 1 duplizieren."
++msgstr "Kommandosubstitution: Kann Pipe nicht als fd 1 duplizieren."
+ 
+ #: subst.c:6710 subst.c:9623
+ #, c-format
+ msgid "%s: invalid variable name for name reference"
+-msgstr "%s: Ungültiger Variablenname für Namensreferenz."
++msgstr ""
+ 
+ #: subst.c:6806 subst.c:6824 subst.c:6979
+ #, c-format
+ msgid "%s: invalid indirect expansion"
+-msgstr "%s: Ungültige indirekte Expansion."
++msgstr "%s: Ungültige indirekte Expansion"
+ 
+ #: subst.c:6840 subst.c:6987
+ #, c-format
+ msgid "%s: invalid variable name"
+-msgstr "%s: Ungültiger Variablenname."
++msgstr "`%s': Ungültiger Variablenname."
+ 
+ #: subst.c:7056
+ #, c-format
+@@ -2101,83 +2088,72 @@
+ #: variables.c:412
+ #, c-format
+ msgid "error importing function definition for `%s'"
+-msgstr "Fehler beim Importieren der Funktionsdefinition für »%s«."
++msgstr "Fehler beim Importieren der Funktionsdefinition für `%s'."
+ 
+ #: variables.c:821
+ #, c-format
+ msgid "shell level (%d) too high, resetting to 1"
+-msgstr "Der Shell-Level (%d) ist zu hoch und wird auf 1 zurückgesetzt."
++msgstr "Der Shell Level (%d) ist zu hoch und wird auf 1 zurückgesetzt."
+ 
+ #: variables.c:2655
+ msgid "make_local_variable: no function context at current scope"
+-msgstr "make_local_variable: no function context at current scope"
++msgstr ""
+ 
+ #: variables.c:2674
+ #, c-format
+ msgid "%s: variable may not be assigned value"
+-msgstr "%s: Der Variable darf kein Wert zugewiesen werden."
++msgstr "%s: Der Variable könnte kein Wert zugewiesen sein."
+ 
+-# Interner Fehler
+ #: variables.c:3453
+ #, c-format
+ msgid "%s: assigning integer to name reference"
+-msgstr "%s: assigning integer to name reference"
++msgstr ""
+ 
+-# Interner Fehler
+ #: variables.c:4365
+ msgid "all_local_variables: no function context at current scope"
+-msgstr "all_local_variables: no function context at current scope"
++msgstr ""
+ 
+-# Interner Fehler
+ #: variables.c:4698
+ #, c-format
+ msgid "%s has null exportstr"
+-msgstr "%s has null exportstr"
++msgstr ""
+ 
+-# Interner Fehler
+ #: variables.c:4703 variables.c:4712
+ #, c-format
+ msgid "invalid character %d in exportstr for %s"
+-msgstr "invalid character %d in exportstr for %s"
++msgstr ""
+ 
+-# Interner Fehler
+ #: variables.c:4718
+ #, c-format
+ msgid "no `=' in exportstr for %s"
+-msgstr "no `=' in exportstr for %s"
++msgstr ""
+ 
+-# Interner Fehler
+ #: variables.c:5243
+ msgid "pop_var_context: head of shell_variables not a function context"
+-msgstr "pop_var_context: head of shell_variables not a function context"
++msgstr ""
+ 
+-# Interner Fehler
+ #: variables.c:5256
+ msgid "pop_var_context: no global_variables context"
+-msgstr "pop_var_context: no global_variables context"
++msgstr ""
+ 
+-# Interner Fehler
+ #: variables.c:5336
+ msgid "pop_scope: head of shell_variables not a temporary environment scope"
+-msgstr "pop_scope: head of shell_variables not a temporary environment scope"
++msgstr ""
+ 
+-# Interner Fehler
+ #: variables.c:6272
+ #, c-format
+ msgid "%s: %s: cannot open as FILE"
+-msgstr "%s: %s: cannot open as FILE"
++msgstr "%s: %s: Kann nicht als Datei geöffnet werden."
+ 
+-# Interner Fehler
+ #: variables.c:6277
+ #, c-format
+ msgid "%s: %s: invalid value for trace file descriptor"
+-msgstr "%s: %s: invalid value for trace file descriptor"
++msgstr ""
+ 
+-# Interner Fehler
+ #: variables.c:6322
+ #, c-format
+ msgid "%s: %s: compatibility value out of range"
+-msgstr "%s: %s: compatibility value out of range"
++msgstr "%s: %s: Kompatibilitätswert außerhalb des Gültigkeitsbereiches."
+ 
+ #: version.c:46 version2.c:46
+ msgid "Copyright (C) 2018 Free Software Foundation, Inc."
+@@ -4798,24 +4770,24 @@
+ "    Returns success if OPTNAME is enabled; fails if an invalid option is\n"
+ "    given or OPTNAME is disabled."
+ msgstr ""
+-"Setzt oder löscht Shell-Optionen.\n"
++"Setzt oder löscht Shell Optionen.\n"
+ "\n"
+-"    Ändert die in »Optionsnamen« genannten Shell-Optionen. Ohne\n"
+-"    Argumente wird eine Liste der Shell-Optionen und deren Status\n"
++"    Ändert die in `Optionsname' genannten Shell Optionen.  Ohne\n"
++"    Argumente wird eine Liste der Shell Optionen un deren Stati\n"
+ "    ausgegeben.\n"
+ "\n"
+ "    Optionen:\n"
+ "      -o        Beschränkt die Optionsmanen auf die, welche mit \n"
+-"                »set -o« definiert werden müssen.\n"
+-"      -p        Gibt alle Shelloptionen und deren Status aus.\n"
++"                `set -o' definiert werden müssen.\n"
++"      -p        Gibt alle Shelloptionen und deren Stati aus.      \n"
+ "      -q        Unterdrückt Ausgaben.\n"
+-"      -s        Setzt jede Option in »Optionsname.«\n"
+-"      -u        Deaktiviert jede Option in »Optionsname«.\n"
++"      -s        Setzt jede Option in `Optionsname.'\n"
++"      -u        Deaktiviert jede Option in `Optionsname'.\n"
+ "\n"
+ "    Rückgabewert:\n"
+-"    Gibt Erfolg zurück, wenn eine Option gesetzt worden ist. Wenn\n"
++"    Gibt Erfolg zurück, wenn eine Option gesetzt worden ist.  Wenn\n"
+ "    eine ungültige Option angegeben wurde oder eine Option deaktiviert\n"
+-"    worden ist, wird ein Fehler zurückgegeben."
++"    worden ist, wird Fehler zurückgegeben."
+ 
+ # printf
+ #: builtins.c:1927
