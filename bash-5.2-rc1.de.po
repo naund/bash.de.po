@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: bash 5.1\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-01-11 14:50-0500\n"
-"PO-Revision-Date: 2024-02-18 18:03+0100\n"
+"PO-Revision-Date: 2024-02-18 18:23+0100\n"
 "Last-Translator: Nils Naumann <nau@gmx.net>\n"
 "Language-Team: German <translation-team-de@lists.sourceforge.net>\n"
 "Language: de\n"
@@ -4272,6 +4272,7 @@ msgid ""
 "    Returns success unless an invalid option is given or NAME is invalid."
 msgstr ""
 
+# shift
 #: builtins.c:1203
 msgid ""
 "Shift positional parameters.\n"
@@ -4323,6 +4324,7 @@ msgstr ""
 "     Gibt Erfolg zurück, außer bei inaktiver Jobsteuerung oder einem anderen\n"
 "     Fehler."
 
+# test
 #: builtins.c:1262
 msgid ""
 "Evaluate conditional expression.\n"
@@ -4609,6 +4611,7 @@ msgid ""
 "    option is given."
 msgstr ""
 
+# for
 #: builtins.c:1549
 msgid ""
 "Execute commands for each member in a list.\n"
@@ -4621,6 +4624,15 @@ msgid ""
 "    Exit Status:\n"
 "    Returns the status of the last command executed."
 msgstr ""
+"Führt Befehle für jeden Listeneintrag aus.\n"
+"    \n"
+"    Die `for' Schleife führt eine Befehlsfolge für jeden Listeneintrag aus. Wenn\n"
+"    das Schlüsselwort `in Wort ...;' fehlt, wird `in \"$@\"' angenommen. Für jeden\n"
+"    Eintrag in \"Wort\" wird die Variable \"Name\" gesetzt und die angegebenen\n"
+"    Kommandos ausgeführt.\n"
+"    \n"
+"    Rückgabewert:\n"
+"    Der Status des zuletzt ausgeführten Kommandos."
 
 #: builtins.c:1563
 msgid ""
