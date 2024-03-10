@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: bash 5.1\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-01-11 14:50-0500\n"
-"PO-Revision-Date: 2024-02-18 19:32+0100\n"
+"PO-Revision-Date: 2024-03-10 17:21+0100\n"
 "Last-Translator: Nils Naumann <nau@gmx.net>\n"
 "Language-Team: German <translation-team-de@lists.sourceforge.net>\n"
 "Language: de\n"
@@ -2303,17 +2303,13 @@ msgid "command [-pVv] command [arg ...]"
 msgstr "command [-pVv] Kommando [Argument ...]"
 
 #: builtins.c:78
-#, fuzzy
-#| msgid "declare [-aAfFgiIlnrtux] [-p] [name[=value] ...]"
 msgid "declare [-aAfFgiIlnrtux] [name[=value] ...] or declare -p [-aAfFilnrtux] [name ...]"
-msgstr "declare [-aAfFgiIlrntux] [-p] [Name[=Wert] ...]"
+msgstr "declare [-aAfFgiIlnrtux] [name[=Wert] ...] oder declare -p [-aAfFilnrtux] [name ...]"
 
 #
 #: builtins.c:80
-#, fuzzy
-#| msgid "typeset [-aAfFgiIlnrtux] [-p] name[=value] ..."
 msgid "typeset [-aAfFgiIlnrtux] name[=value] ... or typeset -p [-aAfFilnrtux] [name ...]"
-msgstr "typeset [-aAfFgiIlnrtux] [-p] Name[=Wert] ..."
+msgstr "typeset [-aAfFgiIlnrtux] name[=Wert] ... oder typeset -p [-aAfFilnrtux] [name ...]"
 
 #: builtins.c:82
 msgid "local [option] name[=value] ..."
@@ -2402,10 +2398,8 @@ msgid "return [n]"
 msgstr "return [n]"
 
 #: builtins.c:142
-#, fuzzy
-#| msgid "set [-abefhkmnptuvxBCHP] [-o option-name] [--] [arg ...]"
 msgid "set [-abefhkmnptuvxBCEHPT] [-o option-name] [--] [-] [arg ...]"
-msgstr "set [-abefhkmnptuvxBCHP] [-o Option] [--] [Argument ...]"
+msgstr "set [-abefhkmnptuvxBCEHPT] [-o Optionsname] [--] [-] [Argument ...]"
 
 #: builtins.c:144
 msgid "unset [-f] [-v] [-n] [name ...]"
@@ -2452,10 +2446,8 @@ msgid "type [-afptP] name [name ...]"
 msgstr "type [-afptP] Name [Name ...]"
 
 #: builtins.c:171
-#, fuzzy
-#| msgid "ulimit [-SHabcdefiklmnpqrstuvxPT] [limit]"
 msgid "ulimit [-SHabcdefiklmnpqrstuvxPRT] [limit]"
-msgstr "ulimit [-SHabcdefiklmnpqrstuvxPT] [Grenze]"
+msgstr "ulimit [-SHabcdefiklmnpqrstuvxPRT] [Grenze]"
 
 #: builtins.c:174
 msgid "umask [-p] [-S] [mode]"
@@ -2494,16 +2486,12 @@ msgid "if COMMANDS; then COMMANDS; [ elif COMMANDS; then COMMANDS; ]... [ else C
 msgstr "if Kommandos; then Kommandos; [ elif Kommandos; then Kommandos; ]... [ else Kommandos; ] fi"
 
 #: builtins.c:196
-#, fuzzy
-#| msgid "while COMMANDS; do COMMANDS; done"
 msgid "while COMMANDS; do COMMANDS-2; done"
-msgstr "while Kommandos; do Kommandos; done"
+msgstr "while Kommandos; do Kommandos-2; done"
 
 #: builtins.c:198
-#, fuzzy
-#| msgid "until COMMANDS; do COMMANDS; done"
 msgid "until COMMANDS; do COMMANDS-2; done"
-msgstr "until Kommandos; do Kommandos; done"
+msgstr "until Kommandos; do Kommandos-2; done"
 
 #: builtins.c:200
 msgid "coproc [NAME] command [redirections]"
@@ -3886,50 +3874,6 @@ msgstr ""
 
 # read
 #: builtins.c:994
-#, fuzzy
-#| msgid ""
-#| "Read a line from the standard input and split it into fields.\n"
-#| "    \n"
-#| "    Reads a single line from the standard input, or from file descriptor FD\n"
-#| "    if the -u option is supplied.  The line is split into fields as with word\n"
-#| "    splitting, and the first word is assigned to the first NAME, the second\n"
-#| "    word to the second NAME, and so on, with any leftover words assigned to\n"
-#| "    the last NAME.  Only the characters found in $IFS are recognized as word\n"
-#| "    delimiters.\n"
-#| "    \n"
-#| "    If no NAMEs are supplied, the line read is stored in the REPLY variable.\n"
-#| "    \n"
-#| "    Options:\n"
-#| "      -a array\tassign the words read to sequential indices of the array\n"
-#| "    \t\tvariable ARRAY, starting at zero\n"
-#| "      -d delim\tcontinue until the first character of DELIM is read, rather\n"
-#| "    \t\tthan newline\n"
-#| "      -e\tuse Readline to obtain the line\n"
-#| "      -i text\tuse TEXT as the initial text for Readline\n"
-#| "      -n nchars\treturn after reading NCHARS characters rather than waiting\n"
-#| "    \t\tfor a newline, but honor a delimiter if fewer than\n"
-#| "    \t\tNCHARS characters are read before the delimiter\n"
-#| "      -N nchars\treturn only after reading exactly NCHARS characters, unless\n"
-#| "    \t\tEOF is encountered or read times out, ignoring any\n"
-#| "    \t\tdelimiter\n"
-#| "      -p prompt\toutput the string PROMPT without a trailing newline before\n"
-#| "    \t\tattempting to read\n"
-#| "      -r\tdo not allow backslashes to escape any characters\n"
-#| "      -s\tdo not echo input coming from a terminal\n"
-#| "      -t timeout\ttime out and return failure if a complete line of\n"
-#| "    \t\tinput is not read within TIMEOUT seconds.  The value of the\n"
-#| "    \t\tTMOUT variable is the default timeout.  TIMEOUT may be a\n"
-#| "    \t\tfractional number.  If TIMEOUT is 0, read returns\n"
-#| "    \t\timmediately, without trying to read any data, returning\n"
-#| "    \t\tsuccess only if input is available on the specified\n"
-#| "    \t\tfile descriptor.  The exit status is greater than 128\n"
-#| "    \t\tif the timeout is exceeded\n"
-#| "      -u fd\tread from file descriptor FD instead of the standard input\n"
-#| "    \n"
-#| "    Exit Status:\n"
-#| "    The return code is zero, unless end-of-file is encountered, read times out\n"
-#| "    (in which case it's greater than 128), a variable assignment error occurs,\n"
-#| "    or an invalid file descriptor is supplied as the argument to -u."
 msgid ""
 "Read a line from the standard input and split it into fields.\n"
 "    \n"
@@ -3977,13 +3921,11 @@ msgid ""
 msgstr ""
 "Liest eine Zeile von der Standardeingabe und teilt sie in Felder auf.\n"
 "    \n"
-"    Liest eine einzelne Zeile aus der Standardeingabe oder vom\n"
-"    Dateideskriptor FD wenn die Option -u angegeben ist.  Die Zeile\n"
-"    wird wie bei der Wortaufteilung in Felder aufgeteilt aufgeteilt,\n"
-"    und das erste Wort wird dem ersten NAME zugewiesen, das zweite\n"
-"    NAME zugewiesen, das zweite Wort dem zweiten NAME usw., wobei alle\n"
-"    verbleibenden Wörter dem dem letzten NAME zugeordnet werden. Die\n"
-"    in $IFS enthaltenen Zeichen werden als Worttrennzeichen verwendet.\n"
+"    Liest eine Zeile von der Standardeingabe oder, mit der Option -u, dem\n"
+"    Dateideskriptor FD. Die Zeile wird ähnlich der Wortaufteilung in Felder\n"
+"    geteilt, und in der angegebenen Reihenfolge den Namen zugewiesen.\n"
+"    Überzählige Felder werden dem letzten Namen zugewiesen. Die in $IFS\n"
+"    enthaltenen Zeichen werden als Trennzeichen verwendet.\n"
 "    \n"
 "    Wenn keine NAMEn angegeben werden, wird die gelesene Zeile in der\n"
 "    REPLY-Variablen gespeichert.\n"
@@ -4212,6 +4154,7 @@ msgstr ""
 "    Rückgabewert:\n"
 "    Gibt Erfolg zurück, es sei denn, eine ungültige Option wurde angegeben."
 
+# unset
 #: builtins.c:1140
 msgid ""
 "Unset values and attributes of shell variables and functions.\n"
@@ -4232,6 +4175,26 @@ msgid ""
 "    Exit Status:\n"
 "    Returns success unless an invalid option is given or a NAME is read-only."
 msgstr ""
+"Zurücksetzen der Werte und Attribute von Variablen und Funktionen.\n"
+"    \n"
+"     Entfernt für jeden NAMEN die entsprechende Variable oder Funktion.\n"
+"    \n"
+"     Optionen:\n"
+"       -f behandelt jeden NAMEN als Shell-Funktion\n"
+"       -v behandelt jeden NAMEN als Shell-Variable\n"
+"       -n behandelt jeden NAMEN als Namensreferenz und setzt diese\n"
+"          Variable zurück, statt der Variable, auf die es verweist\n"
+"    \n"
+"     Ohne Angabe einer Optionen versucht unset zunächst, eine Variable\n"
+"     zu deaktivieren. Wenn dies fehlschlägt, versucht, eine Funktion zu\n"
+"     deaktivieren.\n"
+"    \n"
+"     Einige Variablen können nicht deaktiviert werden. Siehe auch\n"
+"     „schreibgeschützt“.\n"
+"    \n"
+"     Rückgabewert:\n"
+"     Gibt Erfolg zurück, wenn keine ungültige Option oder ein\n"
+"     schreibgeschützter NAME angegeben worden ist."
 
 #: builtins.c:1162
 msgid ""
