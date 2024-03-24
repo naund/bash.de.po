@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: bash 5.2-rc1\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-01-11 14:50-0500\n"
-"PO-Revision-Date: 2024-03-13 19:10+0100\n"
+"PO-Revision-Date: 2024-03-24 13:13+0100\n"
 "Last-Translator: Nils Naumann <nau@gmx.net>\n"
 "Language-Team: German <translation-team-de@lists.sourceforge.net>\n"
 "Language: de\n"
@@ -4829,6 +4829,7 @@ msgid ""
 "    Returns the status of the last command executed."
 msgstr ""
 
+# coproc
 #: builtins.c:1672
 msgid ""
 "Create a coprocess named NAME.\n"
@@ -4841,6 +4842,16 @@ msgid ""
 "    Exit Status:\n"
 "    The coproc command returns an exit status of 0."
 msgstr ""
+"Startet einen Koprozess mit dem angegebenen Namen.\n"
+"    \n"
+"     Führt das angegebene Kommando asynchron in einem Kindprozess aus.\n"
+"     Deren Standardaus- und -eingabe werden mit jeweils einer Pipe\n"
+"     verbunden. Deren Dateideskriptoren sind in den Indexen 0 und 1 der\n"
+"     Feldvariable mit dem angegebenen Namen verknüpft.\n"
+"     Der Standardname ist „COPROC“.\n"
+"    \n"
+"     Rückgabewert:\n"
+"     Der Befehl gibt immer 0 zurück."
 
 # function
 #: builtins.c:1686
