@@ -71,7 +71,7 @@ msgstr "%s: Fehlender Doppelpunkt."
 #: bashline.c:4733
 #, c-format
 msgid "`%s': cannot unbind in command keymap"
-msgstr "»%s«: Kommandozurdnung kann nicht aufgehoben werden. "
+msgstr "`%s': Kommandozurdnung kann nicht aufgehoben werden. "
 
 #: braces.c:327
 #, c-format
