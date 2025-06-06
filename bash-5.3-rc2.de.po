@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: bash 5.3-rc1\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-04-22 09:37-0400\n"
-"PO-Revision-Date: 2025-06-05 16:10+0200\n"
+"PO-Revision-Date: 2025-06-06 19:25+0200\n"
 "Last-Translator: Nils Naumann <nau@gmx.net>\n"
 "Language-Team: German <translation-team-de@lists.sourceforge.net>\n"
 "Language: de\n"
@@ -2508,7 +2508,7 @@ msgstr "wait [pid ...]"
 
 #: builtins.c:184
 msgid "! PIPELINE"
-msgstr ""
+msgstr "! Pipeline"
 
 #: builtins.c:186
 msgid "for NAME [in WORDS ... ] ; do COMMANDS; done"
@@ -4840,6 +4840,7 @@ msgstr ""
 "    Gibt `Erfolg' zurück, wenn eine gültige Maske oder eine gültige\n"
 "    Option angegeben wurde."
 
+# wait with job control
 #: builtins.c:1547
 msgid ""
 "Wait for job completion and return exit status.\n"
@@ -4868,6 +4869,7 @@ msgid ""
 "    children."
 msgstr ""
 
+# wait without job control
 #: builtins.c:1578
 msgid ""
 "Wait for process completion and return exit status.\n"
@@ -4881,6 +4883,7 @@ msgid ""
 "    option is given."
 msgstr ""
 
+# ! Bang Operator
 #: builtins.c:1593
 msgid ""
 "Execute PIPELINE, which can be a simple command, and negate PIPELINE's\n"
@@ -4889,6 +4892,11 @@ msgid ""
 "    Exit Status:\n"
 "    The logical negation of PIPELINE's return status."
 msgstr ""
+"Führt die Pipelie aus (die auch ein einzelnes Kommando sein kann) und\n"
+"    negiert deren Rückgabewert.\n"
+"    \n"
+"    Rückgabewert:\n"
+"    Die logische Negation des Rückgabewerts der Pipeline."
 
 # for
 #: builtins.c:1603
