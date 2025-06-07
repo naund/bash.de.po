@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: bash 5.3-rc1\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-04-22 09:37-0400\n"
-"PO-Revision-Date: 2025-06-07 15:53+0200\n"
+"PO-Revision-Date: 2025-06-07 15:56+0200\n"
 "Last-Translator: Nils Naumann <nau@gmx.net>\n"
 "Language-Team: German <translation-team-de@lists.sourceforge.net>\n"
 "Language: de\n"
@@ -2536,7 +2536,7 @@ msgstr "if Kommandos; then Kommandos; [ elif Kommandos; then Kommandos; ]... [ e
 
 #: builtins.c:198
 msgid "while COMMANDS; do COMMANDS-2; done"
-msgstr "while Kommandos; do Kommandos-2; done"
+msgstr "while Test; do Kommandos; done"
 
 #: builtins.c:200
 msgid "until COMMANDS; do COMMANDS-2; done"
@@ -5074,6 +5074,13 @@ msgid ""
 "    Exit Status:\n"
 "    Returns the status of the last command executed."
 msgstr ""
+"Führt die Kommandos aus, so lange der Test erfolgreich ist.\n"
+"    \n"
+"    Führt die Kommandos aus, so lange das letzte Kommando vom Test ein\n"
+"    Rückgabewert gleich Null hat.\n"
+"    \n"
+"    Rückgabewert:\n"
+"    Meldet den Rückgabewert des zuletzt ausgeführten Kommandos."
 
 # until
 #: builtins.c:1714
