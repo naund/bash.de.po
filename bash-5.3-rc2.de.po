@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: bash 5.3-rc1\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-04-22 09:37-0400\n"
-"PO-Revision-Date: 2025-06-06 21:12+0200\n"
+"PO-Revision-Date: 2025-06-07 13:00+0200\n"
 "Last-Translator: Nils Naumann <nau@gmx.net>\n"
 "Language-Team: German <translation-team-de@lists.sourceforge.net>\n"
 "Language: de\n"
@@ -2520,7 +2520,7 @@ msgstr "for (( Ausdr1; Ausdr2; Ausdr3 )); do Kommandos; done"
 
 #: builtins.c:190
 msgid "select NAME [in WORDS ... ;] do COMMANDS; done"
-msgstr "select Name [in Wort ... ;] do Kommandos; done"
+msgstr "select Wort [in Wörter ... ;] do Kommandos; done"
 
 #: builtins.c:192
 msgid "time [-p] pipeline"
@@ -4950,6 +4950,7 @@ msgstr ""
 
 # for (( 
 #: builtins.c:1617
+#, fuzzy
 msgid ""
 "Arithmetic for loop.\n"
 "    \n"
@@ -4967,7 +4968,7 @@ msgid ""
 msgstr ""
 "Arithmetische For Schleife.\n"
 "\n"
-"    Equivalent zu:\n"
+"    Äquivalent zu:\n"
 "    \t(( Ausdr1 ))\n"
 "    \twhile (( Ausdr2 )); do\n"
 "    \t\tKommandos\n"
@@ -4976,10 +4977,12 @@ msgstr ""
 "    Ausdr1-3 sind arithmethische Ausdrücke. Für fehlende Ausdrücke wird 1\n"
 "    angenommen.\n"
 "\n"
-"Rückgabewert:\n"
-"Status des zuletzt ausgeführten Kommandos."
+"    Rückgabewert:\n"
+"    Status des zuletzt ausgeführten Kommandos."
 
+# select
 #: builtins.c:1635
+#, fuzzy
 msgid ""
 "Select words from a list and execute commands.\n"
 "    \n"
@@ -4998,6 +5001,23 @@ msgid ""
 "    Exit Status:\n"
 "    Returns the status of the last command executed."
 msgstr ""
+"Wählt Wörter aus einer Liste und führt anschließend das Kommando aus.\n"
+"    \n"
+"    Die angegebenen Wörter werden in eine Liste überführt. Diese wird\n"
+"    auf die Standardausgabe mit einer vorangestellten Nummer gedruckt.\n"
+"    Wenn keine Wörter angegeben sind, wird `in \"$@\"' verwendet. An-\n"
+"    schließend wird der PS3 Prompt angezeigt und eine Zeile von der\n"
+"    Standardeingabe gelesen. Wenn der gelesene Text einer angezeigten\n"
+"    Nummer entspricht, wird der mit dem Wort bezeichnete Variable das\n"
+"    angezeigte Wort zugewiesen. Wird eine leere Zeile gelesen, wird die\n"
+"    Liste erneut angezeigt. Nachdem EOF (End of File) gelesen wurde,\n"
+"    wird das Kommando beendet. Jeder andere Wert führt dazu, dass eine\n"
+"    leere Zeichenkette zugewiesen wird. Die gelesene Zeile wird der\n"
+"    Variable REPLY zugewiesen. Die Kommandos werden nach jeder Auswahl\n"
+"    ausgeführt und durch Break beendet.\n"
+"    \n"
+"    Rückgabewert:\n"
+"    Status des zuletzt ausgeführten Kommandos."
 
 #: builtins.c:1656
 msgid ""
