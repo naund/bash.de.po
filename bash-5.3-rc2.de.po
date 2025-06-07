@@ -6,10 +6,10 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: bash 5.3-rc1\n"
+"Project-Id-Version: bash 5.3-rc2\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-04-22 09:37-0400\n"
-"PO-Revision-Date: 2025-06-07 17:05+0200\n"
+"PO-Revision-Date: 2025-06-07 17:27+0200\n"
 "Last-Translator: Nils Naumann <nau@gmx.net>\n"
 "Language-Team: German <translation-team-de@lists.sourceforge.net>\n"
 "Language: de\n"
@@ -1805,17 +1805,19 @@ msgstr "\t-%s oder Option -o\n"
 #: shell.c:2096
 #, c-format
 msgid "Type `%s -c \"help set\"' for more information about shell options.\n"
-msgstr "Geben Sie »%s -c \"help set\"« ein, um mehr über Shell-Optionen zu erfahren.\n"
+msgstr ""
+"Mehr Informationen über Shell-Optionen sind mit »%s -c \"help set\"«\n"
+"verfügbar.\n"
 
 #: shell.c:2097
 #, c-format
 msgid "Type `%s -c help' for more information about shell builtin commands.\n"
-msgstr "Geben Sie »%s -c help« ein, um mehr über eingebaute Shellkommandos zu erfahren.\n"
+msgstr "Eingebaute Shell-Kommandos werden durch »%s -c help« beschrieben.\n"
 
 #: shell.c:2098
 #, c-format
 msgid "Use the `bashbug' command to report bugs.\n"
-msgstr "Mit dem Kommando »bashbug« Kommando können Sie Fehler melden.\n"
+msgstr "Fehler bitte mit dem Kommando »bashbug« melden.\n"
 
 #: shell.c:2100
 #, c-format
@@ -2281,8 +2283,9 @@ msgid "This is free software; you are free to change and redistribute it."
 msgstr "Dies ist freie Software. Sie darf verändert und weitergegeben werden."
 
 #: version.c:96
+#, fuzzy
 msgid "There is NO WARRANTY, to the extent permitted by law."
-msgstr "Es wird keinerlri Garantie gewährt, soweit es das Gesetz zulässt."
+msgstr "Es wird keinerlei Garantie gewährt, soweit es das Gesetz zulässt."
 
 #: xmalloc.c:84
 #, c-format
@@ -2349,12 +2352,12 @@ msgstr "command [-pVv] Kommando [Argument ...]"
 
 #: builtins.c:78
 msgid "declare [-aAfFgiIlnrtux] [name[=value] ...] or declare -p [-aAfFilnrtux] [name ...]"
-msgstr "declare [-aAfFgiIlnrtux] [name[=Wert] ...] oder declare -p [-aAfFilnrtux] [name ...]"
+msgstr "declare [-aAfFgiIlnrtux] [Name[=Wert] ...] oder declare -p [-aAfFilnrtux] [Name ...]"
 
 #
 #: builtins.c:80
 msgid "typeset [-aAfFgiIlnrtux] name[=value] ... or typeset -p [-aAfFilnrtux] [name ...]"
-msgstr "typeset [-aAfFgiIlnrtux] name[=Wert] ... oder typeset -p [-aAfFilnrtux] [name ...]"
+msgstr "typeset [-aAfFgiIlnrtux] name[=Wert] ... oder typeset -p [-aAfFilnrtux] [Name ...]"
 
 #: builtins.c:82
 msgid "local [option] name[=value] ..."
@@ -2504,7 +2507,7 @@ msgstr "wait [-fn] [-p Variable] [id ...]"
 
 #: builtins.c:181
 msgid "wait [pid ...]"
-msgstr "wait [pid ...]"
+msgstr "wait [PID ...]"
 
 #: builtins.c:184
 msgid "! PIPELINE"
